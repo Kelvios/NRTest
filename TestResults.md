@@ -1,51 +1,51 @@
-# Test results: Infamy Infamy, Late Republican Romans (I1 to I7)
+# Test results: Infamy Infamy, Early Imperial Romans (E1 to E7)
 
 Data revision tested: 1
 
-Date: 01OCT2026
+Date:
 
-New Recruit version: New Recruit 36.29
+New Recruit version:
 
-For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (totals, errors, missing or extra units, anything hard to read).
+For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (totals, errors, missing or extra units).
 
-## I1: One Warlord is required
+## E1: Both armies are offered
 
-What should happen: The empty Army should report that it needs one Warlord. With one Centurion added, that message should go away. The second Centurion should show an error, because the Army allows only one Warlord.
+What should happen: You should be able to pick "Late Republican Romans" and "Early Imperial Romans". Pick Early Imperial Romans for the cases below unless a case says otherwise.
 
-Result: PASS
+Result: 
 
-## I2: Group prices add up in Points
+## E2: One Warlord is required
 
-What should happen: Points should total 67 (10 + 22 + 22 + 13). Support should show 0 or nothing.
+What should happen: The empty Army should report that it needs one Warlord. With one Centurion it should clear. A second Centurion should show an error.
 
-Result: PASS
+Result: 
 
-## I3: Leader prices
+## E3: Group prices add up in Points
 
-What should happen: Points should rise by 10, from 67 to 77.
+What should happen: Points should total 83 (10 + 21 + 21 + 19 + 12). Support should show 0 or nothing.
 
-Result: PSS
+Result: 
 
-## I4: The Group stat lines show correctly
+## E4: Stat lines that differ from the Late Republic
 
-What should happen: Each stat line should match what is written here. The Centurion's leader line should read Status III, Command Initiatives 3, Command Range 9. Write down any value that is wrong or missing, and whether the Group and Leader lines are easy to read.
+What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
 
-Result: PASS
+Result: 
 
-## I5: Which units are offered under each heading
+## E5: Which units are offered under each heading
 
-What should happen: Foot Groups: Roman Legionaries, Legionary Recruits, Evocati (Veteran Legionaries), Expediti (Legionary Light Infantry), Allied Gallic Warriors, Iberian Caetrati. Skirmisher Groups: Numidian Skirmishers, Tribal Slingers. Mounted Groups: Roman Cavalry, Numidian Cavalry, Iberian Cavalry, Allied Germanic Cavalry, Allied Gallic Cavalry. War Engines: Scorpion. There should be no "Auxiliary Infantry" and no separate "Roman Engineers" Group. Leaders and Support have their own headings.
+What should happen: Foot Groups (9): Roman Legionaries, Legionary Recruits, Cohortes Praetoriae, Evocati (Veteran Legionaries), Roman Auxiliary Foot, Allied Tribal Warriors, Cohors Urbanae, Roman Ex-Legionary Colonist, Armed Servants & Slaves. Skirmisher Groups (2): Roman Auxiliary Archers, Tribal Slingers. Mounted Groups (4): Roman Alea Cavalry, Auxiliary Cavalry, Allied Tribal Cavalry, Allied Noble Cavalry. War Engines (1): Scorpion. There should be no separate "Roman Engineers" Group and no Late Republic units such as "Numidian Cavalry".
 
-Result: PASS
+Result: 
 
-## I6: Support is costed separately from Points
+## E6: Support costs and limits
 
-What should happen: Support should total 17 (2 + 3 + 12). Points should not change from the previous case (77).
+What should happen: Support should total 17 and Points should stay at 83. The second Musician, second Capsarius, third Mule Train (limit 2) and second Improvised Defences should each show an error. Three Cratis should show no error.
 
-Result: PASS
+Result: 
 
-## I7: The book's support limits show as errors
+## E7: The Late Republic army still works
 
-What should happen: Each of these should show an error once you go past its limit: Musician 1, Capsarius 1, Mule Train 2, Exploratores 2, Improvised Defences 1, Prepared Defences 1, Engineer Group with Cart 1. Three Cratis and three Lilia and Tribuli should show no error, because the book sets no limit on them.
+What should happen: Points should total 67 (10 + 22 + 22 + 13), as in the earlier test. In this army "Roman Legionaries" cost 22 and have Drilled and Triplex Acies. No Early Imperial units should appear.
 
-Result: PASS
+Result: 
