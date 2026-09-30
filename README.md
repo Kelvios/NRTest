@@ -10,3 +10,5 @@ Always the same four files, replaced for each new test:
 - `TestResults.md`: the same cases with a `Result:` line to fill in
 
 Bump `revision` in the source spec on every new test so New Recruit reloads the data. Keep finished results by copying `TestResults.md` to `archive/<date>-<name>-results.md` before starting the next test, and record proven patterns in Boot-Camp's `docs/MODELLING_PATTERNS.md`.
+
+Most labs use just `Test.gst` and `Test.cat`. A lab that needs several catalogues adds `Test-<Name>.cat` files. Delete any extra `.cat` files when replacing them with the next test.

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="1548-1fa6-b3c3-1cef" name="Army C" gameSystemId="sys-4d10-ed81-ab80-2530" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" authorName="Your Name">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" name="C Leader" hidden="false" id="6656-f7e1-2e2e-769f" import="true">
+      <categoryLinks>
+        <categoryLink id="43e8-9dd9-80fc-f21e" name="Leader" hidden="false" targetId="1c57-bce3-e57d-1bd8" primary="true" />
+      </categoryLinks>
+      <costs>
+        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="C Fighter" hidden="false" id="5e8c-ef40-edb4-d43a" import="true">
+      <categoryLinks>
+        <categoryLink id="5410-feba-df96-f3de" name="Fighters" hidden="false" targetId="b415-b76e-d0ec-b923" primary="true" />
+      </categoryLinks>
+      <costs>
+        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink name="C Leader" hidden="false" id="479b-8f41-3281-f852" type="selectionEntry" targetId="6656-f7e1-2e2e-769f" import="true" />
+    <entryLink name="C Fighter" hidden="false" id="a099-68e0-e99c-a164" type="selectionEntry" targetId="5e8c-ef40-edb4-d43a" import="true" />
+  </entryLinks>
+</catalogue>

@@ -1,80 +1,62 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="76b2-9fb0-0f9b-ba54" name="Test Catalogue" gameSystemId="sys-4d10-ed81-ab80-2530" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" authorName="Your Name">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="5752-4de0-2495-689c" name="Army A" gameSystemId="sys-4d10-ed81-ab80-2530" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" authorName="Your Name">
+  <catalogueLinks>
+    <catalogueLink id="64b1-3287-d14e-9128" name="Test Library" targetId="b0c7-d5a6-dec1-8a06" type="catalogue" importRootEntries="true" />
+  </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry id="3dd7-2645-4552-ad6f" name="Champions" hidden="false" />
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="e5c0-5824-f9eb-d45d" name="Champion Band" hidden="false">
+      <categoryLinks>
+        <categoryLink id="13e5-3e02-7c64-0072" name="Leader" hidden="false" targetId="1c57-bce3-e57d-1bd8" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b16-c8dd-e0fa-536c" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b24a-b54a-c83c-d96e" />
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1137-90de-c757-e8ce" name="Champions" hidden="false" targetId="3dd7-2645-4552-ad6f" type="category">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3583-3859-4484-a06e" />
+          </constraints>
+        </categoryLink>
+        <categoryLink id="966b-dee8-f78d-fe88" name="Fighters" hidden="false" targetId="b415-b76e-d0ec-b923" type="category">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d2d7-7e7f-a9e8-88f0" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" name="X1a Only for Warriors" hidden="false" id="32ac-29b7-0e35-a282" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition type="notInstanceOf" field="selections" scope="parent" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da6-e5b9-c0db-2061" />
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="X1b Not for Warriors" hidden="false" id="2a61-6eb6-9b77-0585" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition type="instanceOf" field="selections" scope="parent" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da6-e5b9-c0db-2061" />
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="X4 Link probe" hidden="false" id="0468-b5b8-6a53-6a06" import="true" />
-    <selectionEntry type="model" name="Leader" hidden="false" id="8fc2-6981-a3a3-f31b" import="true">
+    <selectionEntry type="model" name="A Leader" hidden="false" id="35cc-a637-ef98-db8a" import="true">
       <categoryLinks>
-        <categoryLink id="f1b6-0db8-f4d3-6b3d" name="Leader" hidden="false" targetId="1c57-bce3-e57d-1bd8" primary="true" />
+        <categoryLink id="618a-c33f-7870-ff96" name="Leader" hidden="false" targetId="1c57-bce3-e57d-1bd8" primary="true" />
       </categoryLinks>
-      <entryLinks>
-        <entryLink name="X1a Only for Warriors" hidden="false" id="7799-bf1a-cb3a-07d1" type="selectionEntry" targetId="32ac-29b7-0e35-a282" import="true" />
-        <entryLink name="X1b Not for Warriors" hidden="false" id="1b16-00c7-ed6d-47e5" type="selectionEntry" targetId="2a61-6eb6-9b77-0585" import="true" />
-        <entryLink name="X4 Link probe" hidden="false" id="99ee-0397-2f59-1a30" type="selectionEntry" targetId="0468-b5b8-6a53-6a06" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition type="lessThan" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="faa9-9aa1-c626-49ce" />
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
+      <costs>
+        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="A Fighter" hidden="false" id="71a6-20ab-6dbb-925f" import="true">
+      <categoryLinks>
+        <categoryLink id="d508-2d8f-fa97-ba7c" name="Fighters" hidden="false" targetId="b415-b76e-d0ec-b923" primary="true" />
+      </categoryLinks>
       <costs>
         <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" name="Warriors" hidden="false" id="e8d6-bed8-d837-b2d3" import="true">
+    <selectionEntry type="model" name="A Champion" hidden="false" id="1266-e6cd-9b73-750d" import="true">
       <categoryLinks>
-        <categoryLink id="ca00-05d0-bdc5-c13b" name="Warriors" hidden="false" targetId="2da6-e5b9-c0db-2061" primary="true" />
-      </categoryLinks>
-      <entryLinks>
-        <entryLink name="X1a Only for Warriors" hidden="false" id="f8b6-f95c-d7b0-baf6" type="selectionEntry" targetId="32ac-29b7-0e35-a282" import="true" />
-        <entryLink name="X1b Not for Warriors" hidden="false" id="0fe9-3782-9a07-469a" type="selectionEntry" targetId="2a61-6eb6-9b77-0585" import="true" />
-        <entryLink name="X4 Link probe" hidden="false" id="2352-b79e-7a7d-3e7c" type="selectionEntry" targetId="0468-b5b8-6a53-6a06" import="true" />
-      </entryLinks>
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" name="Ally" hidden="false" id="af59-7588-218c-6dfa" import="true">
-      <categoryLinks>
-        <categoryLink id="eaec-4cb1-1915-d74c" name="Allies" hidden="false" targetId="faa9-9aa1-c626-49ce" primary="true" />
+        <categoryLink id="c883-d0fb-8402-8a38" name="Champions" hidden="false" targetId="3dd7-2645-4552-ad6f" primary="true" />
       </categoryLinks>
       <costs>
         <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" name="Scout" hidden="false" id="b934-a2b8-ec13-9e21" import="true">
-      <categoryLinks>
-        <categoryLink id="eb8e-086b-14aa-219b" name="Scouts" hidden="false" targetId="723b-5cbb-29f1-961e" primary="true" />
-      </categoryLinks>
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink name="Leader" hidden="false" id="50c2-87c0-4054-eaa4" type="selectionEntry" targetId="8fc2-6981-a3a3-f31b" import="true" />
-    <entryLink name="Warriors" hidden="false" id="0281-f4fb-c175-8d64" type="selectionEntry" targetId="e8d6-bed8-d837-b2d3" import="true" />
-    <entryLink name="Ally" hidden="false" id="53f2-f9ff-c216-509f" type="selectionEntry" targetId="af59-7588-218c-6dfa" import="true" />
-    <entryLink name="Scout" hidden="false" id="bbcc-dbd4-cdd4-f6e8" type="selectionEntry" targetId="b934-a2b8-ec13-9e21" import="true" />
+    <entryLink name="A Leader" hidden="false" id="6841-c250-e790-2573" type="selectionEntry" targetId="35cc-a637-ef98-db8a" import="true" />
+    <entryLink name="A Fighter" hidden="false" id="80ae-f277-d3e7-247e" type="selectionEntry" targetId="71a6-20ab-6dbb-925f" import="true" />
+    <entryLink name="A Champion" hidden="false" id="aa0b-42eb-ec86-32c5" type="selectionEntry" targetId="1266-e6cd-9b73-750d" import="true" />
   </entryLinks>
 </catalogue>
