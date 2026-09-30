@@ -1,51 +1,57 @@
-# Test results: Infamy Infamy, Early Imperial Romans (E1 to E7)
+# Test results: Infamy Infamy, Britons (B1 to B8)
 
 Data revision tested: 1
 
-Date: 01OCT220226
+Date:
 
-New Recruit version: New Recruit 36.29
+New Recruit version:
 
 For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (totals, errors, missing or extra units).
 
-## E1: Both armies are offered
+## B1: Britons are offered, and one Warlord is required
 
-What should happen: You should be able to pick "Late Republican Romans" and "Early Imperial Romans". Pick Early Imperial Romans for the cases below unless a case says otherwise.
+What should happen: Britons should be offered alongside the two Roman armies. The empty Army should report that it needs one Warlord. With one Leader (Status III, Warlord) it should clear. A second should show an error.
 
-Result: PASS
+Result: 
 
-## E2: One Warlord is required
+## B2: Group prices add up in Points
 
-What should happen: The empty Army should report that it needs one Warlord. With one Centurion it should clear. A second Centurion should show an error.
+What should happen: Points should total 83 (10 + 19 + 19 + 14 + 14 + 7). Support should show 0 or nothing.
 
-Result: PASS
+Result: 
 
-## E3: Group prices add up in Points
-
-What should happen: Points should total 83 (10 + 21 + 21 + 19 + 12). Support should show 0 or nothing.
-
-Result: PASS
-
-## E4: Stat lines that differ from the Late Republic
+## B3: Stat lines
 
 What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
 
-Result: PASS
+Result: 
 
-## E5: Which units are offered under each heading
+## B4: Which units are offered under each heading
 
-What should happen: Foot Groups (9): Roman Legionaries, Legionary Recruits, Cohortes Praetoriae, Evocati (Veteran Legionaries), Roman Auxiliary Foot, Allied Tribal Warriors, Cohors Urbanae, Roman Ex-Legionary Colonist, Armed Servants & Slaves. Skirmisher Groups (2): Roman Auxiliary Archers, Tribal Slingers. Mounted Groups (4): Roman Alea Cavalry, Auxiliary Cavalry, Allied Tribal Cavalry, Allied Noble Cavalry. War Engines (1): Scorpion. There should be no separate "Roman Engineers" Group and no Late Republic units such as "Numidian Cavalry".
+What should happen: Foot Groups (5): Noble Warriors, Warriors, Fanatical Warriors, Tribal Levy, Allied Warriors. Skirmisher Groups (2): Tribal Javelins, Tribal Slingers. Mounted Groups (1): Tribal Cavalry. War Engines: nothing. There should be no Roman units.
 
-Result: PASS
+Result: 
 
-## E6: Support costs and limits
+## B5: Chariots are capped by the number of Warriors Groups
 
-What should happen: Support should total 17 and Points should stay at 83. The second Musician, second Capsarius, third Mule Train (limit 2) and second Improvised Defences should each show an error. Three Cratis should show no error.
+What should happen: With no Warriors or Noble Warriors, one Chariots should show an error. With one Noble Warriors, one Chariots is fine and a second errors. With one Noble Warriors and one Warriors, two Chariots are fine and a third errors. After removing the Noble Warriors, only one is allowed, so two Chariots should error. Each Chariots costs 3 Support.
 
-Result: PASS
+Result: 
 
-## E7: The Late Republic army still works
+## B6: Support costs and limits
 
-What should happen: Points should total 67 (10 + 22 + 22 + 13), as in the earlier test. In this army "Roman Legionaries" cost 22 and have Drilled and Triplex Acies. No Early Imperial units should appear.
+What should happen: The third Wagon (limit 2), second Musician (limit 1), second Secret Way (limit 1), second Dyke (limit 1) and second Fortified Wall (limit 1) should each show an error. Three Faggots should show no error. Support should total 6 + 4 + 8 + 24 + 40 + 6 = 88, counting every item you added.
 
-Result: PASS
+Result: 
+
+## B7: Which support options are offered
+
+What should happen: You should see: Supra Numerum Leader (Support), Wagon, Musician, Faggots, Status I Leader (Support), Chariots, Battering Ram, Secret Way, Status II Leader (Support), Dyke, Fortified Wall. You should not see Palisade, Exploratores, Capsarius, Mule Train or Prepared Defences.
+
+Result: 
+
+## B8: The Roman armies still work
+
+What should happen: Points should total 67 (10 + 22 + 22 + 13), as in the earlier test.
+
+Result: 

@@ -1,56 +1,62 @@
-# Test plan: Infamy Infamy, Early Imperial Romans (E1 to E7)
+# Test plan: Infamy Infamy, Britons (B1 to B8)
 
 Data revision under test: 1. Source spec: `Kelvios/Boot-Camp`, `systems/Infamy/spec.yaml`.
 
-This adds the second army to the same game system. The Late Republican Romans army was tested earlier and passed, so E7 only checks it has not changed.
+This adds the Britons army. The Roman armies were tested earlier and passed, so B8 only checks they have not changed. The one new idea is B5: Chariots are limited by how many Warriors Groups are in the roster, a rule shape that has not been tried in the app with named units before.
 
-The files are `Test.gst`, `Test.cat` (Late Republican Romans) and `Test-EI.cat` (Early Imperial Romans). The game system inside is called "Infamy Infamy".
+The files are `Test.gst`, `Test.cat` (Late Republican Romans), `Test-EI.cat` (Early Imperial Romans) and `Test-Britons.cat`.
 
 ## Before you start
 
-1. Remove the old "Infamy Infamy" game system and catalogues from New Recruit, then load `Test.gst`, `Test.cat` and `Test-EI.cat`. Load the game system first.
+1. Remove the old "Infamy Infamy" game system and its catalogues from New Recruit, then load `Test.gst` and the three `.cat` files. Load the game system first.
 2. New Recruit does not add anything to a new roster for you. Every force and every unit has to be added by hand.
-3. Do E2, E3 and E6 in one roster, in order, because they build on each other.
+3. Do B1 and B2 in one roster, in order.
 4. Write your results in `TestResults.md`, and note the New Recruit version at the top.
 
-## E1: Both armies are offered
+## B1: Britons are offered, and one Warlord is required
 
-What to do: Load the game system "Infamy Infamy" with both catalogues. Start a new roster and look at the list of armies.
+What to do: Load the game system with all three catalogues. Start a new roster and check that "Britons" is among the armies. Pick Britons, add an Army force and look at what is reported missing. Add one "Leader (Status III, Warlord)", then try to add a second.
 
-What should happen: You should be able to pick "Late Republican Romans" and "Early Imperial Romans". Pick Early Imperial Romans for the cases below unless a case says otherwise.
+What should happen: Britons should be offered alongside the two Roman armies. The empty Army should report that it needs one Warlord. With one Leader (Status III, Warlord) it should clear. A second should show an error.
 
-## E2: One Warlord is required
+## B2: Group prices add up in Points
 
-What to do: In an Early Imperial Romans roster, add an Army force. Look at what is reported as missing. Add one "Centurion (Status III, Warlord)", then try to add a second.
+What to do: In the same roster add two "Noble Warriors" (19 each), two "Warriors" (14 each) and one "Tribal Levy" (7).
 
-What should happen: The empty Army should report that it needs one Warlord. With one Centurion it should clear. A second Centurion should show an error.
+What should happen: Points should total 83 (10 + 19 + 19 + 14 + 14 + 7). Support should show 0 or nothing.
 
-## E3: Group prices add up in Points
+## B3: Stat lines
 
-What to do: Add one Centurion (10 points), two "Roman Legionaries" (21 each), one "Roman Auxiliary Foot" (19) and one "Roman Auxiliary Archers" (12).
-
-What should happen: Points should total 83 (10 + 21 + 21 + 19 + 12). Support should show 0 or nothing.
-
-## E4: Stat lines that differ from the Late Republic
-
-What to do: Open the stat lines of these Groups. "Roman Legionaries": Warriors, strength 8, Heavy armour, Mixed and Pila weapons, Aggressive Attack 1, Step Out 1/2, characteristic Drilled only (the Late Republic version also has Triplex Acies). "Cohortes Praetoriae": Inferior Warriors, strength 8, Heavy, Mixed and Pila, Aggressive Attack 2, Step Out 2, Drilled, 18 points. "Roman Alea Cavalry": Mounted Warriors, strength 6, Medium, Mixed, Aggressive Attack "Always", Step Out 1, Impetuous, 14 points. "Armed Servants & Slaves": Inferior Warriors, strength 6, no armour, Hand to Hand Only, Aggressive Attack and Step Out shown as a dash, no characteristics, 4 points.
+What to do: Open the stat lines of these Groups. "Noble Warriors": Elite Warriors, strength 10, Medium armour, Mixed weapons, Aggressive Attack 1, Step Out 1, characteristics Mob, Chariots, Fervour, Darken the Sky (when in chariots), 19 points. "Tribal Levy": Inferior Warriors, strength 10, Light, Mixed, Aggressive Attack 3, Step Out 3, Mob, Limited Fervour, Supra Numerum, 7 points. "Fanatical Warriors": Warriors, strength 6, Light, Hand to Hand Only, Aggressive Attack 1, Step Out 1, Fanatics, Fervour, Supra Numerum, 14 points. "Tribal Javelins": Skirmishers, strength 6, Light, Javelin, Aggressive Attack dash, Step Out 2, Darken the Sky, Supra Numerum, 6 points.
 
 What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
 
-## E5: Which units are offered under each heading
+## B4: Which units are offered under each heading
 
-What to do: Look at the units you can add under each heading in an Early Imperial Romans Army.
+What to do: Look at the units you can add under each heading in a Britons Army.
 
-What should happen: Foot Groups (9): Roman Legionaries, Legionary Recruits, Cohortes Praetoriae, Evocati (Veteran Legionaries), Roman Auxiliary Foot, Allied Tribal Warriors, Cohors Urbanae, Roman Ex-Legionary Colonist, Armed Servants & Slaves. Skirmisher Groups (2): Roman Auxiliary Archers, Tribal Slingers. Mounted Groups (4): Roman Alea Cavalry, Auxiliary Cavalry, Allied Tribal Cavalry, Allied Noble Cavalry. War Engines (1): Scorpion. There should be no separate "Roman Engineers" Group and no Late Republic units such as "Numidian Cavalry".
+What should happen: Foot Groups (5): Noble Warriors, Warriors, Fanatical Warriors, Tribal Levy, Allied Warriors. Skirmisher Groups (2): Tribal Javelins, Tribal Slingers. Mounted Groups (1): Tribal Cavalry. War Engines: nothing. There should be no Roman units.
 
-## E6: Support costs and limits
+## B5: Chariots are capped by the number of Warriors Groups
 
-What to do: In the same roster, add one Musician (2), one Capsarius (3) and one Improvised Defences (12) and look at the totals. Then add a second Musician, a second Capsarius, a third Mule Train (add three) and a second Improvised Defences. Finally add three Cratis.
+What to do: Start a new Britons roster with just the Leader. Try to add one "Chariots". Then add one "Noble Warriors" and add Chariots until you get an error. Then add one "Warriors" and try again. Then remove the Noble Warriors and look again. Do not count Tribal Levy or Allied Warriors.
 
-What should happen: Support should total 17 and Points should stay at 83. The second Musician, second Capsarius, third Mule Train (limit 2) and second Improvised Defences should each show an error. Three Cratis should show no error.
+What should happen: With no Warriors or Noble Warriors, one Chariots should show an error. With one Noble Warriors, one Chariots is fine and a second errors. With one Noble Warriors and one Warriors, two Chariots are fine and a third errors. After removing the Noble Warriors, only one is allowed, so two Chariots should error. Each Chariots costs 3 Support.
 
-## E7: The Late Republic army still works
+## B6: Support costs and limits
 
-What to do: Start a separate roster with Late Republican Romans. Add an Army force, one Centurion, two "Roman Legionaries" and one "Legionary Recruits".
+What to do: In one Britons roster add: three Wagons (2 each), two Musicians (2), two Secret Ways (4), two Dykes (12), two Fortified Walls (20) and three Faggots (2). Note which give an error and read the Support total.
 
-What should happen: Points should total 67 (10 + 22 + 22 + 13), as in the earlier test. In this army "Roman Legionaries" cost 22 and have Drilled and Triplex Acies. No Early Imperial units should appear.
+What should happen: The third Wagon (limit 2), second Musician (limit 1), second Secret Way (limit 1), second Dyke (limit 1) and second Fortified Wall (limit 1) should each show an error. Three Faggots should show no error. Support should total 6 + 4 + 8 + 24 + 40 + 6 = 88, counting every item you added.
+
+## B7: Which support options are offered
+
+What to do: Look at the units and options under the Support heading of a Britons Army.
+
+What should happen: You should see: Supra Numerum Leader (Support), Wagon, Musician, Faggots, Status I Leader (Support), Chariots, Battering Ram, Secret Way, Status II Leader (Support), Dyke, Fortified Wall. You should not see Palisade, Exploratores, Capsarius, Mule Train or Prepared Defences.
+
+## B8: The Roman armies still work
+
+What to do: Start a roster with Late Republican Romans: add an Army, one Centurion, two Roman Legionaries and one Legionary Recruits.
+
+What should happen: Points should total 67 (10 + 22 + 22 + 13), as in the earlier test.
