@@ -1,62 +1,589 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="5752-4de0-2495-689c" name="Army A" gameSystemId="sys-4d10-ed81-ab80-2530" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" authorName="Your Name">
-  <catalogueLinks>
-    <catalogueLink id="64b1-3287-d14e-9128" name="Test Library" targetId="b0c7-d5a6-dec1-8a06" type="catalogue" importRootEntries="true" />
-  </catalogueLinks>
-  <categoryEntries>
-    <categoryEntry id="3dd7-2645-4552-ad6f" name="Champions" hidden="false" />
-  </categoryEntries>
-  <forceEntries>
-    <forceEntry id="e5c0-5824-f9eb-d45d" name="Champion Band" hidden="false">
-      <categoryLinks>
-        <categoryLink id="13e5-3e02-7c64-0072" name="Leader" hidden="false" targetId="1c57-bce3-e57d-1bd8" type="category">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b16-c8dd-e0fa-536c" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b24a-b54a-c83c-d96e" />
-          </constraints>
-        </categoryLink>
-        <categoryLink id="1137-90de-c757-e8ce" name="Champions" hidden="false" targetId="3dd7-2645-4552-ad6f" type="category">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3583-3859-4484-a06e" />
-          </constraints>
-        </categoryLink>
-        <categoryLink id="966b-dee8-f78d-fe88" name="Fighters" hidden="false" targetId="b415-b76e-d0ec-b923" type="category">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d2d7-7e7f-a9e8-88f0" />
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="8063-a8e0-49da-fab2" name="Late Republican Romans" gameSystemId="sys-d58b-f1b4-607c-9c48" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" authorName="Kelvin">
   <sharedSelectionEntries>
-    <selectionEntry type="model" name="A Leader" hidden="false" id="35cc-a637-ef98-db8a" import="true">
+    <selectionEntry type="model" name="Centurion (Status III, Warlord)" hidden="false" id="964e-7e4c-4e20-06bd" import="true">
       <categoryLinks>
-        <categoryLink id="618a-c33f-7870-ff96" name="Leader" hidden="false" targetId="1c57-bce3-e57d-1bd8" primary="true" />
+        <categoryLink id="cace-da76-536e-6521" name="Warlord" hidden="false" targetId="d617-67cc-c0b4-4e6b" primary="true" />
       </categoryLinks>
+      <profiles>
+        <profile name="Centurion (Status III, Warlord)" hidden="false" typeId="30f5-3a32-f497-de27" typeName="Leader" id="6c9c-41ba-26d3-b62b">
+          <characteristics>
+            <characteristic name="Status" typeId="0249-d186-45d4-3a71">III</characteristic>
+            <characteristic name="Command Initiatives" typeId="d79a-826f-2e0d-b47a">3</characteristic>
+            <characteristic name="Command Range (in)" typeId="1bee-750e-84df-7d3f">9</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="10" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" name="A Fighter" hidden="false" id="71a6-20ab-6dbb-925f" import="true">
+    <selectionEntry type="model" name="Status II Leader (Optio if with Regular Drilled Troops)" hidden="false" id="058a-7aae-39bc-36a1" import="true">
       <categoryLinks>
-        <categoryLink id="d508-2d8f-fa97-ba7c" name="Fighters" hidden="false" targetId="b415-b76e-d0ec-b923" primary="true" />
+        <categoryLink id="4f14-28c3-7663-6094" name="Leaders" hidden="false" targetId="885b-7415-6d98-dcdf" primary="true" />
       </categoryLinks>
+      <profiles>
+        <profile name="Status II Leader" hidden="false" typeId="30f5-3a32-f497-de27" typeName="Leader" id="106f-adbc-e86d-d7fc">
+          <characteristics>
+            <characteristic name="Status" typeId="0249-d186-45d4-3a71">II</characteristic>
+            <characteristic name="Command Initiatives" typeId="d79a-826f-2e0d-b47a">2</characteristic>
+            <characteristic name="Command Range (in)" typeId="1bee-750e-84df-7d3f">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="6" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" name="A Champion" hidden="false" id="1266-e6cd-9b73-750d" import="true">
+    <selectionEntry type="model" name="Status I Leader" hidden="false" id="2865-25bd-f0b8-1495" import="true">
       <categoryLinks>
-        <categoryLink id="c883-d0fb-8402-8a38" name="Champions" hidden="false" targetId="3dd7-2645-4552-ad6f" primary="true" />
+        <categoryLink id="a0b5-7063-fd33-f495" name="Leaders" hidden="false" targetId="885b-7415-6d98-dcdf" primary="true" />
       </categoryLinks>
+      <profiles>
+        <profile name="Status I Leader" hidden="false" typeId="30f5-3a32-f497-de27" typeName="Leader" id="3852-a58b-ca93-92bb">
+          <characteristics>
+            <characteristic name="Status" typeId="0249-d186-45d4-3a71">I</characteristic>
+            <characteristic name="Command Initiatives" typeId="d79a-826f-2e0d-b47a">1</characteristic>
+            <characteristic name="Command Range (in)" typeId="1bee-750e-84df-7d3f">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="3" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" name="Supra Numerum Leader" hidden="false" id="3c8b-bf7a-cc59-6bc5" import="true">
+      <categoryLinks>
+        <categoryLink id="4abd-17bf-a4bf-3a7d" name="Leaders" hidden="false" targetId="885b-7415-6d98-dcdf" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Supra Numerum Leader" hidden="false" typeId="30f5-3a32-f497-de27" typeName="Leader" id="301d-8586-6000-f17a">
+          <characteristics>
+            <characteristic name="Status" typeId="0249-d186-45d4-3a71">Supra Numerum</characteristic>
+            <characteristic name="Command Initiatives" typeId="d79a-826f-2e0d-b47a">0</characteristic>
+            <characteristic name="Command Range (in)" typeId="1bee-750e-84df-7d3f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Roman Legionaries" hidden="false" id="d3b0-d06e-2071-9319" import="true">
+      <categoryLinks>
+        <categoryLink id="7be4-349e-5998-77d0" name="Foot Groups" hidden="false" targetId="46c4-e0cf-6392-bede" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Roman Legionaries" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="0d9b-5872-a93d-1435">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">8</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Heavy</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed, Pila</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">1</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1/2</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Drilled, Triplex Acies</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="22" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Legionary Recruits" hidden="false" id="6cca-41ee-db32-2ee7" import="true">
+      <categoryLinks>
+        <categoryLink id="67ce-15b1-46cd-1bdb" name="Foot Groups" hidden="false" targetId="46c4-e0cf-6392-bede" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Legionary Recruits" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="4d9b-2433-51ad-5ae8">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">8</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Heavy</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed, Pila</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">3</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1/2</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Poor Drill</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="13" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Evocati, Veteran Legionaries" hidden="false" id="112a-de7f-1f33-c544" import="true">
+      <categoryLinks>
+        <categoryLink id="4788-f646-c6c0-3ae3" name="Foot Groups" hidden="false" targetId="46c4-e0cf-6392-bede" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Evocati, Veteran Legionaries" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="715d-5689-b86d-d393">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Elite Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">8</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Heavy</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed, Pila</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">1</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">2</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Drilled, Triplex Acies</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="23" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Expediti, Legionary Light Infantry" hidden="false" id="f82a-e5c2-925f-2b09" import="true">
+      <categoryLinks>
+        <categoryLink id="23fe-3ee8-84e3-d472" name="Foot Groups" hidden="false" targetId="46c4-e0cf-6392-bede" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Expediti, Legionary Light Infantry" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="7d9e-8347-2bd5-d4e8">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">8</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Light</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">1</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Drilled, Flexible Drill</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="17" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Allied Gallic Warriors" hidden="false" id="1ba5-dcbd-20b0-3975" import="true">
+      <categoryLinks>
+        <categoryLink id="910b-ec66-0399-6b00" name="Foot Groups" hidden="false" targetId="46c4-e0cf-6392-bede" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Allied Gallic Warriors" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="d525-e4b3-9cad-9fbf">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">10</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Light</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">2</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">2</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Mob, Fervour, Surly</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="13" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Iberian Caetrati" hidden="false" id="be9d-3414-df83-3f68" import="true">
+      <categoryLinks>
+        <categoryLink id="7b62-4dec-48d6-d8df" name="Foot Groups" hidden="false" targetId="46c4-e0cf-6392-bede" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Iberian Caetrati" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="8a40-f74e-2620-901a">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">8</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Light</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">1</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Supra Numerum, Flexible Drill, Horse Killers, Foot Cavalry</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="13" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Numidian Skirmishers" hidden="false" id="9e10-6ca1-ad47-0587" import="true">
+      <categoryLinks>
+        <categoryLink id="0c9b-430d-49c8-9f97" name="Skirmisher Groups" hidden="false" targetId="59ac-b001-7034-b837" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Numidian Skirmishers" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="bb55-2588-b8cb-60a6">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Skirmishers</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Light</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Javelin</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">-</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Supra Numerum, Darken the Sky, Vipers, Foot Cavalry</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="8" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Tribal Slingers" hidden="false" id="e43f-a7a1-031b-d7a5" import="true">
+      <categoryLinks>
+        <categoryLink id="5dae-7901-d91a-a0cc" name="Skirmisher Groups" hidden="false" targetId="59ac-b001-7034-b837" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Tribal Slingers" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="b219-7b3b-3e11-2752">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Skirmishers</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">None</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Slings</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">-</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Darken the Sky, Supra Numerum</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="10" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Roman Cavalry" hidden="false" id="ab51-1906-b57d-97bd" import="true">
+      <categoryLinks>
+        <categoryLink id="6e99-1dd0-6ae3-5eb9" name="Mounted Groups" hidden="false" targetId="670f-fc13-6b38-62d2" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Roman Cavalry" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="4115-3fb3-534d-05c4">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Mounted Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Medium</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">1</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">2</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732" />
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="12" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Numidian Cavalry" hidden="false" id="6d7b-347b-b911-e007" import="true">
+      <categoryLinks>
+        <categoryLink id="bd2e-58e1-14e1-af0e" name="Mounted Groups" hidden="false" targetId="670f-fc13-6b38-62d2" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Numidian Cavalry" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="c19e-f1af-86a8-c722">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Skirmish Cavalry</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Light</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Javelin</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">-</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Supra Numerum Darken the Sky (1) Vipers, Foot Cavalry, Well Supplied</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="12" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Iberian Cavalry" hidden="false" id="a24d-d615-744d-bed8" import="true">
+      <categoryLinks>
+        <categoryLink id="c98d-75df-5724-b445" name="Mounted Groups" hidden="false" targetId="670f-fc13-6b38-62d2" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Iberian Cavalry" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="60f5-3422-b718-4539">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Skirmish Cavalry</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Light</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Javelin</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">2</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">1</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Foot Cavalry</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="10" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Allied Germanic Cavalry" hidden="false" id="b241-1c5e-e455-6e30" import="true">
+      <categoryLinks>
+        <categoryLink id="5117-fd6f-90cb-d7b5" name="Mounted Groups" hidden="false" targetId="670f-fc13-6b38-62d2" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Allied Germanic Cavalry" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="5e65-8489-de89-7980">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Mounted Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Light</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">1</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">-</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Impetuous</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="10" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Allied Gallic Cavalry" hidden="false" id="98ea-85e5-70fc-6889" import="true">
+      <categoryLinks>
+        <categoryLink id="edc4-0e6b-0f82-ecdf" name="Mounted Groups" hidden="false" targetId="670f-fc13-6b38-62d2" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Allied Gallic Cavalry" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="1739-c8de-9922-8c3e">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Mounted Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Medium</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">3</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">2</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Surly, Impetuous, Supra Numerum</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="11" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Scorpion" hidden="false" id="813b-b881-7b43-2e2f" import="true">
+      <categoryLinks>
+        <categoryLink id="adb6-74f7-e5c9-6df7" name="War Engines" hidden="false" targetId="204f-52e6-bf92-627a" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Scorpion" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="002b-9557-167b-9593">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">5</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Medium</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Scorpion</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">-</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">-</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Supra Numerum</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="e89e-26b3-ba84-d897" value="10" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Exploratores" hidden="false" id="b9c5-0cc8-c6d8-04d1" import="true">
+      <categoryLinks>
+        <categoryLink id="b4b3-659a-da05-4548" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="6d17-2359-e148-66df" name="Exploratores" hidden="false">
+          <description>List One. Mounted scouts that never appear on the table. Each scouts one terrain feature before the game. Maximum two.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="8bcb-69f2-a663-226e" />
+      </constraints>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Supra Numerum Leader (Support)" hidden="false" id="13ca-fd33-868c-e95b" import="true">
+      <categoryLinks>
+        <categoryLink id="6fc1-f8f3-ce16-bdfd" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="1234-61a9-4eef-e19f" name="Supra Numerum Leader (Support)" hidden="false">
+          <description>List One. A leader who is not on the table and has no command initiatives. Only Status I, Status II and Supra Numerum leaders may be chosen as support.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Musician" hidden="false" id="900d-ff10-e9aa-b551" import="true">
+      <categoryLinks>
+        <categoryLink id="d1a6-d6b8-f3c3-f27e" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="c757-2671-b32c-9766" name="Musician" hidden="false">
+          <description>List Two. Attached to the force commander to double his Command Range. Maximum one.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b178-7604-0aff-6eaf" />
+      </constraints>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Mule Train" hidden="false" id="bc60-113b-4d4a-ef11" import="true">
+      <categoryLinks>
+        <categoryLink id="a2e2-d89e-3a82-f7ab" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="7822-26e9-d10a-b98f" name="Mule Train" hidden="false">
+          <description>List Two. Limited supplies; Groups out of ammunition can resupply from it. Maximum two.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="b085-cc7b-1f37-5a31" />
+      </constraints>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Cratis" hidden="false" id="b65b-02de-4c42-e843" import="true">
+      <categoryLinks>
+        <categoryLink id="906e-2119-2708-57b8" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="6909-ebda-e56e-9bcb" name="Cratis" hidden="false">
+          <description>List Two. One bundle of Cratis; any number may be chosen. See the rulebook (page 70).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Lilia and Tribuli" hidden="false" id="d816-47c0-8746-aaf0" import="true">
+      <categoryLinks>
+        <categoryLink id="dbae-ed92-2e58-e3f3" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="7d0c-1f45-1e68-8188" name="Lilia and Tribuli" hidden="false">
+          <description>List Two. One 12 inch section of defences is covered by Lilia and Tribuli; any number may be chosen.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Status I Leader (Support)" hidden="false" id="6b20-b5a7-57cc-ba5f" import="true">
+      <categoryLinks>
+        <categoryLink id="9b35-bf18-a7b7-2fc4" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="af70-bf6c-1d9a-2da8" name="Status I Leader (Support)" hidden="false">
+          <description>List Three. A named Status I leader taken as support.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="3" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Capsarius" hidden="false" id="5a2a-13e7-9db7-2e39" import="true">
+      <categoryLinks>
+        <categoryLink id="1b30-2db8-c7ad-ec8b" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="e725-1de8-2830-f85e" name="Capsarius" hidden="false">
+          <description>List Three. A medic who can restore one Status level to a wounded leader while attending him. Maximum one.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="97bf-737a-dd97-68f2" />
+      </constraints>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="3" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Engineer Group with Cart" hidden="false" id="33d2-5633-9195-8c24" import="true">
+      <categoryLinks>
+        <categoryLink id="f059-c2d5-9f10-3bad" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Roman Engineers" hidden="false" typeId="8ffd-aeee-ace4-24ad" typeName="Group" id="e1fa-cac6-4100-d3c1">
+          <characteristics>
+            <characteristic name="Type" typeId="8399-5229-8ab6-30be">Inferior Warriors</characteristic>
+            <characteristic name="Strength" typeId="1e86-00d5-78b8-cebe">6</characteristic>
+            <characteristic name="Armour" typeId="1ffe-0648-62ea-d789">Medium</characteristic>
+            <characteristic name="Weapons" typeId="6c11-dcad-c329-860b">Mixed</characteristic>
+            <characteristic name="Aggressive Attack" typeId="7e26-4e3f-43fb-234a">3</characteristic>
+            <characteristic name="Step Out" typeId="33bf-1756-6775-d9ed">3</characteristic>
+            <characteristic name="Characteristics" typeId="462f-1611-3539-7732">Drilled</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="594d-4907-dc5e-d54e" name="Engineer Group with Cart" hidden="false">
+          <description>List Four. Six figures with a cart carrying a battering ram and tools. They do not attack. They may add 6 inches of Improvised Defences at no cost. Maximum one Group.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="16d1-4694-3046-3db3" />
+      </constraints>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="4" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Status II Leader (Support, Optio if with Regular Drilled Troops)" hidden="false" id="f8bb-2d35-34d7-d199" import="true">
+      <categoryLinks>
+        <categoryLink id="4da1-31ee-69fc-03f2" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="817c-72a3-e40c-233e" name="Status II Leader (Support)" hidden="false">
+          <description>List Six (added by erratum). A named Status II leader taken as support. He is an Optio if with Regular Drilled Troops.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="6" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Improvised Defences" hidden="false" id="10c0-f3d6-d7b1-33e5" import="true">
+      <categoryLinks>
+        <categoryLink id="59ce-14f6-95ae-1823" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="b673-fc72-d80f-91c0" name="Improvised Defences" hidden="false">
+          <description>List Twelve. One 12 inch section placed within 12 inches of the Deployment Zone or friendly Ambush Points. Maximum one.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f566-e763-e028-52d7" />
+      </constraints>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="12" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Prepared Defences" hidden="false" id="894f-2410-7d24-ee72" import="true">
+      <categoryLinks>
+        <categoryLink id="2558-3eff-9448-a909" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" primary="true" />
+      </categoryLinks>
+      <rules>
+        <rule id="c5de-8524-b1c5-6cb5" name="Prepared Defences" hidden="false">
+          <description>List Twenty. One 12 inch section placed within 12 inches of the Deployment Zone. Maximum one.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="732c-5f46-4323-af91" />
+      </constraints>
+      <costs>
+        <cost name="Support" typeId="7c9a-b7c3-373d-72a6" value="20" />
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink name="A Leader" hidden="false" id="6841-c250-e790-2573" type="selectionEntry" targetId="35cc-a637-ef98-db8a" import="true" />
-    <entryLink name="A Fighter" hidden="false" id="80ae-f277-d3e7-247e" type="selectionEntry" targetId="71a6-20ab-6dbb-925f" import="true" />
-    <entryLink name="A Champion" hidden="false" id="aa0b-42eb-ec86-32c5" type="selectionEntry" targetId="1266-e6cd-9b73-750d" import="true" />
+    <entryLink name="Centurion (Status III, Warlord)" hidden="false" id="d6ed-cb91-b5e8-f25b" type="selectionEntry" targetId="964e-7e4c-4e20-06bd" import="true" />
+    <entryLink name="Status II Leader (Optio if with Regular Drilled Troops)" hidden="false" id="ae73-3702-9ee4-aa97" type="selectionEntry" targetId="058a-7aae-39bc-36a1" import="true" />
+    <entryLink name="Status I Leader" hidden="false" id="6f97-e787-a824-f5a6" type="selectionEntry" targetId="2865-25bd-f0b8-1495" import="true" />
+    <entryLink name="Supra Numerum Leader" hidden="false" id="c745-5f93-ef6a-ad0d" type="selectionEntry" targetId="3c8b-bf7a-cc59-6bc5" import="true" />
+    <entryLink name="Roman Legionaries" hidden="false" id="c5bd-ba50-9881-983b" type="selectionEntry" targetId="d3b0-d06e-2071-9319" import="true" />
+    <entryLink name="Legionary Recruits" hidden="false" id="2748-d048-3258-a737" type="selectionEntry" targetId="6cca-41ee-db32-2ee7" import="true" />
+    <entryLink name="Evocati, Veteran Legionaries" hidden="false" id="1030-bc9a-244e-7e22" type="selectionEntry" targetId="112a-de7f-1f33-c544" import="true" />
+    <entryLink name="Expediti, Legionary Light Infantry" hidden="false" id="1812-8561-c438-43c8" type="selectionEntry" targetId="f82a-e5c2-925f-2b09" import="true" />
+    <entryLink name="Allied Gallic Warriors" hidden="false" id="c7c1-2bc7-b6da-d14f" type="selectionEntry" targetId="1ba5-dcbd-20b0-3975" import="true" />
+    <entryLink name="Iberian Caetrati" hidden="false" id="62ed-5c68-9984-4e6e" type="selectionEntry" targetId="be9d-3414-df83-3f68" import="true" />
+    <entryLink name="Numidian Skirmishers" hidden="false" id="392d-1e06-10b5-9dad" type="selectionEntry" targetId="9e10-6ca1-ad47-0587" import="true" />
+    <entryLink name="Tribal Slingers" hidden="false" id="0c12-e4da-3537-0d8f" type="selectionEntry" targetId="e43f-a7a1-031b-d7a5" import="true" />
+    <entryLink name="Roman Cavalry" hidden="false" id="19e0-5235-f310-1f6d" type="selectionEntry" targetId="ab51-1906-b57d-97bd" import="true" />
+    <entryLink name="Numidian Cavalry" hidden="false" id="d1cd-77d6-7a03-b13e" type="selectionEntry" targetId="6d7b-347b-b911-e007" import="true" />
+    <entryLink name="Iberian Cavalry" hidden="false" id="44b7-8212-1c01-31bc" type="selectionEntry" targetId="a24d-d615-744d-bed8" import="true" />
+    <entryLink name="Allied Germanic Cavalry" hidden="false" id="4cd2-289f-8ed3-b2d9" type="selectionEntry" targetId="b241-1c5e-e455-6e30" import="true" />
+    <entryLink name="Allied Gallic Cavalry" hidden="false" id="8e13-9bee-886f-d41e" type="selectionEntry" targetId="98ea-85e5-70fc-6889" import="true" />
+    <entryLink name="Scorpion" hidden="false" id="f813-5197-71ee-1389" type="selectionEntry" targetId="813b-b881-7b43-2e2f" import="true" />
+    <entryLink name="Exploratores" hidden="false" id="3704-b8e1-ec9b-4510" type="selectionEntry" targetId="b9c5-0cc8-c6d8-04d1" import="true" />
+    <entryLink name="Supra Numerum Leader (Support)" hidden="false" id="4300-318c-3733-358c" type="selectionEntry" targetId="13ca-fd33-868c-e95b" import="true" />
+    <entryLink name="Musician" hidden="false" id="af97-16f3-8539-4614" type="selectionEntry" targetId="900d-ff10-e9aa-b551" import="true" />
+    <entryLink name="Mule Train" hidden="false" id="d4d8-e042-1edc-2bd2" type="selectionEntry" targetId="bc60-113b-4d4a-ef11" import="true" />
+    <entryLink name="Cratis" hidden="false" id="87a7-2e09-179f-6f45" type="selectionEntry" targetId="b65b-02de-4c42-e843" import="true" />
+    <entryLink name="Lilia and Tribuli" hidden="false" id="71dd-e33d-1402-3914" type="selectionEntry" targetId="d816-47c0-8746-aaf0" import="true" />
+    <entryLink name="Status I Leader (Support)" hidden="false" id="584b-7acf-2f64-dffd" type="selectionEntry" targetId="6b20-b5a7-57cc-ba5f" import="true" />
+    <entryLink name="Capsarius" hidden="false" id="c014-ccab-49bb-393f" type="selectionEntry" targetId="5a2a-13e7-9db7-2e39" import="true" />
+    <entryLink name="Engineer Group with Cart" hidden="false" id="0efe-b916-21cd-8cda" type="selectionEntry" targetId="33d2-5633-9195-8c24" import="true" />
+    <entryLink name="Status II Leader (Support, Optio if with Regular Drilled Troops)" hidden="false" id="adef-c03a-eb4a-95ab" type="selectionEntry" targetId="f8bb-2d35-34d7-d199" import="true" />
+    <entryLink name="Improvised Defences" hidden="false" id="7ee6-0203-ba4b-aadd" type="selectionEntry" targetId="10c0-f3d6-d7b1-33e5" import="true" />
+    <entryLink name="Prepared Defences" hidden="false" id="957c-3525-0bb4-8b1a" type="selectionEntry" targetId="894f-2410-7d24-ee72" import="true" />
   </entryLinks>
 </catalogue>

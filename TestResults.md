@@ -1,39 +1,51 @@
-# Test results: Structure Lab (S1 to S5)
+# Test results: Infamy Infamy, Late Republican Romans (I1 to I7)
 
-Data revision tested: 3
+Data revision tested: 1
 
-Date: 30SEP2026
+Date:
 
-New Recruit version: New Recruit 36.28
+New Recruit version:
 
-For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (which armies, forces or units appeared, and which did not).
+For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (totals, errors, missing or extra units, anything hard to read).
 
-## S1: Which armies the app offers
+## I1: One Warlord is required
 
-What should happen: You should be able to pick Army A, Army B and Army C. "Test Library" is a library, meant only to share content, so it should not be offered as an army. If it is offered, or an army is missing, write down what you see.
+What should happen: The empty Army should report that it needs one Warlord. With one Centurion added, that message should go away. The second Centurion should show an error, because the Army allows only one Warlord.
 
-Result: PASS
+Result: 
 
-## S2: A catalogue that imports the library's units (import_root on)
+## I2: Group prices add up in Points
 
-What should happen: You should be able to add both "A Fighter" (Army A's own) and "Library Fighter" (borrowed from the library).
+What should happen: Points should total 67 (10 + 22 + 22 + 13). Support should show 0 or nothing.
 
-Result: PASS
+Result: 
 
-## S3: A catalogue that links to the library but does not import its units (import_root off)
+## I3: Leader prices
 
-What should happen: You should see "B Fighter" only. "Library Fighter" should not be offered.
+What should happen: Points should rise by 10, from 67 to 77.
 
-Result: PASS
+Result: 
 
-## S4: A catalogue with no link to the library
+## I4: The Group stat lines show correctly
 
-What should happen: You should see "C Fighter" only. "Library Fighter" should not be offered.
+What should happen: Each stat line should match what is written here. The Centurion's leader line should read Status III, Command Initiatives 3, Command Range 9. Write down any value that is wrong or missing, and whether the Group and Leader lines are easy to read.
 
-Result: PASS
+Result: 
 
-## S5: A force and a category that exist in one catalogue only
+## I5: Which units are offered under each heading
 
-What should happen: Army A should offer two forces, Warband and Champion Band. In Champion Band there should be a Champions heading and "A Champion" can be added. In Warband, "A Champion" should not be available, because Warband has no Champions heading. Army B should offer Warband only.
+What should happen: Foot Groups: Roman Legionaries, Legionary Recruits, Evocati (Veteran Legionaries), Expediti (Legionary Light Infantry), Allied Gallic Warriors, Iberian Caetrati. Skirmisher Groups: Numidian Skirmishers, Tribal Slingers. Mounted Groups: Roman Cavalry, Numidian Cavalry, Iberian Cavalry, Allied Germanic Cavalry, Allied Gallic Cavalry. War Engines: Scorpion. There should be no "Auxiliary Infantry" and no separate "Roman Engineers" Group. Leaders and Support have their own headings.
 
-Result: PASS
+Result: 
+
+## I6: Support is costed separately from Points
+
+What should happen: Support should total 17 (2 + 3 + 12). Points should not change from the previous case (77).
+
+Result: 
+
+## I7: The book's support limits show as errors
+
+What should happen: Each of these should show an error once you go past its limit: Musician 1, Capsarius 1, Mule Train 2, Exploratores 2, Improvised Defences 1, Prepared Defences 1, Engineer Group with Cart 1. Three Cratis and three Lilia and Tribuli should show no error, because the book sets no limit on them.
+
+Result: 
