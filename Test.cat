@@ -1,233 +1,70 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="76b2-9fb0-0f9b-ba54" name="Test Catalogue" gameSystemId="sys-4d10-ed81-ab80-2530" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" authorName="Your Name">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="76b2-9fb0-0f9b-ba54" name="Test Catalogue" gameSystemId="sys-4d10-ed81-ab80-2530" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" authorName="Your Name">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" name="M1 Hidden until a Hero" hidden="false" id="cfb2-74e7-63ce-213a" import="true">
+    <selectionEntry type="upgrade" name="X1a Only for Warriors" hidden="false" id="32ac-29b7-0e35-a282" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition type="lessThan" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
+            <condition type="notInstanceOf" field="selections" scope="parent" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da6-e5b9-c0db-2061" />
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="0" />
-      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" name="M5a Hide when neither (and-group)" hidden="false" id="6595-0d70-f8b7-769e" import="true">
+    <selectionEntry type="upgrade" name="X1b Not for Warriors" hidden="false" id="2a61-6eb6-9b77-0585" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="lessThan" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-                <condition type="lessThan" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4dd-8897-c416-fe56" />
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M5b Show when either (or-group)" hidden="true" id="8d7c-559d-3d41-df16" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="atLeast" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-                <condition type="atLeast" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4dd-8897-c416-fe56" />
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M6 lessThan 1" hidden="true" id="03f5-eda1-e471-02b8" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition type="lessThan" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
+            <condition type="instanceOf" field="selections" scope="parent" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da6-e5b9-c0db-2061" />
           </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" name="M6 greaterThan 1" hidden="true" id="6fc5-700e-7135-5a87" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition type="greaterThan" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M6 equalTo 1" hidden="true" id="bb95-4415-4921-65a3" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition type="equalTo" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M6 notEqualTo 1" hidden="true" id="67d0-876d-3f31-a844" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition type="notEqualTo" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M6 atLeast 2" hidden="true" id="549f-1b68-cd8c-18ea" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition type="atLeast" field="selections" scope="force" value="2" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M6 atMost 1" hidden="true" id="79aa-29b7-7629-baa5" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition type="atMost" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M9 Trinket A" hidden="false" id="11be-6d5d-1b3f-4167" import="true">
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" name="M9 Trinket B" hidden="false" id="9d4f-e90c-cceb-ebee" import="true">
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
-      </costs>
-    </selectionEntry>
+    <selectionEntry type="upgrade" name="X4 Link probe" hidden="false" id="0468-b5b8-6a53-6a06" import="true" />
     <selectionEntry type="model" name="Leader" hidden="false" id="8fc2-6981-a3a3-f31b" import="true">
       <categoryLinks>
         <categoryLink id="f1b6-0db8-f4d3-6b3d" name="Leader" hidden="false" targetId="1c57-bce3-e57d-1bd8" primary="true" />
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="M1 (hidden until a Hero)" hidden="false" id="97ee-33d2-b4c1-573d">
-          <entryLinks>
-            <entryLink name="M1 Hidden until a Hero" hidden="false" id="830a-d4ef-a17d-d322" type="selectionEntry" targetId="cfb2-74e7-63ce-213a" import="true" />
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="M5 (condition groups)" hidden="false" id="d9b2-25af-ea48-5f21">
-          <entryLinks>
-            <entryLink name="M5a Hide when neither (and-group)" hidden="false" id="5252-eb77-50a2-643f" type="selectionEntry" targetId="6595-0d70-f8b7-769e" import="true" />
-            <entryLink name="M5b Show when either (or-group)" hidden="false" id="d65d-4548-fb1b-6a88" type="selectionEntry" targetId="8d7c-559d-3d41-df16" import="true" />
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="M6 (one probe per condition type)" hidden="false" id="4855-3137-4e90-3591">
-          <entryLinks>
-            <entryLink name="M6 lessThan 1" hidden="false" id="856e-fa7b-99da-e85b" type="selectionEntry" targetId="03f5-eda1-e471-02b8" import="true" />
-            <entryLink name="M6 greaterThan 1" hidden="false" id="a63a-e041-48ea-7eb6" type="selectionEntry" targetId="6fc5-700e-7135-5a87" import="true" />
-            <entryLink name="M6 equalTo 1" hidden="false" id="31d6-2f77-e43a-5765" type="selectionEntry" targetId="bb95-4415-4921-65a3" import="true" />
-            <entryLink name="M6 notEqualTo 1" hidden="false" id="a0dd-594e-c6e7-a36d" type="selectionEntry" targetId="67d0-876d-3f31-a844" import="true" />
-            <entryLink name="M6 atLeast 2" hidden="false" id="fb11-e01e-4461-ac85" type="selectionEntry" targetId="549f-1b68-cd8c-18ea" import="true" />
-            <entryLink name="M6 atMost 1" hidden="false" id="320f-ad3d-5972-86ed" type="selectionEntry" targetId="79aa-29b7-7629-baa5" import="true" />
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="M9 (max 3 Honour in this group)" hidden="false" id="535b-7694-d8c2-68dc">
-          <constraints>
-            <constraint type="max" value="3" field="42f6-5fc8-5ad6-ffee" scope="parent" shared="true" id="a83c-e806-8d53-bd25" />
-          </constraints>
-          <entryLinks>
-            <entryLink name="M9 Trinket A" hidden="false" id="9d1c-3bd5-c689-a8df" type="selectionEntry" targetId="11be-6d5d-1b3f-4167" import="true" />
-            <entryLink name="M9 Trinket B" hidden="false" id="bf72-ed37-db39-33bc" type="selectionEntry" targetId="9d4f-e90c-cceb-ebee" import="true" />
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink name="X1a Only for Warriors" hidden="false" id="7799-bf1a-cb3a-07d1" type="selectionEntry" targetId="32ac-29b7-0e35-a282" import="true" />
+        <entryLink name="X1b Not for Warriors" hidden="false" id="1b16-00c7-ed6d-47e5" type="selectionEntry" targetId="2a61-6eb6-9b77-0585" import="true" />
+        <entryLink name="X4 Link probe" hidden="false" id="99ee-0397-2f59-1a30" type="selectionEntry" targetId="0468-b5b8-6a53-6a06" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="lessThan" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="faa9-9aa1-c626-49ce" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="model" name="Hero" hidden="false" id="1c77-0724-4af4-1e00" import="true">
-      <categoryLinks>
-        <categoryLink id="9fcc-d1f8-8113-d4d2" name="Heroes" hidden="false" targetId="c808-fd4d-9d0d-8c35" primary="true" />
-      </categoryLinks>
-      <modifiers>
-        <modifier type="increment" field="42f6-5fc8-5ad6-ffee" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false" />
-          </repeats>
-        </modifier>
-        <modifier type="append" field="name" value=" (Veteran)">
-          <conditions>
-            <condition type="atLeast" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da6-e5b9-c0db-2061" />
-          </conditions>
-        </modifier>
-      </modifiers>
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" name="Warriors" hidden="false" id="e8d6-bed8-d837-b2d3" import="true">
       <categoryLinks>
         <categoryLink id="ca00-05d0-bdc5-c13b" name="Warriors" hidden="false" targetId="2da6-e5b9-c0db-2061" primary="true" />
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="64c0-3055-1fb3-0388" />
-      </constraints>
-      <modifiers>
-        <modifier type="decrement" field="64c0-3055-1fb3-0388" value="1">
-          <conditions>
-            <condition type="atLeast" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4dd-8897-c416-fe56" />
-          </conditions>
-        </modifier>
-      </modifiers>
+      <entryLinks>
+        <entryLink name="X1a Only for Warriors" hidden="false" id="f8b6-f95c-d7b0-baf6" type="selectionEntry" targetId="32ac-29b7-0e35-a282" import="true" />
+        <entryLink name="X1b Not for Warriors" hidden="false" id="0fe9-3782-9a07-469a" type="selectionEntry" targetId="2a61-6eb6-9b77-0585" import="true" />
+        <entryLink name="X4 Link probe" hidden="false" id="2352-b79e-7a7d-3e7c" type="selectionEntry" targetId="0468-b5b8-6a53-6a06" import="true" />
+      </entryLinks>
       <costs>
         <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" name="Marksmen" hidden="false" id="a3ef-46e1-0515-513c" import="true">
+    <selectionEntry type="unit" name="Ally" hidden="false" id="af59-7588-218c-6dfa" import="true">
       <categoryLinks>
-        <categoryLink id="37f9-2f46-b581-1afe" name="Marksmen" hidden="false" targetId="b4dd-8897-c416-fe56" primary="true" />
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7371-8dd7-ba98-b23f" />
-      </constraints>
-      <modifiers>
-        <modifier type="decrement" field="42f6-5fc8-5ad6-ffee" value="1">
-          <conditions>
-            <condition type="atLeast" field="selections" scope="force" value="2" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da6-e5b9-c0db-2061" />
-          </conditions>
-        </modifier>
-        <modifier type="set" field="7371-8dd7-ba98-b23f" value="3">
-          <conditions>
-            <condition type="atLeast" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="c808-fd4d-9d0d-8c35" />
-          </conditions>
-        </modifier>
-        <modifier type="set" field="name" value="Marksmen (Supported)">
-          <conditions>
-            <condition type="atLeast" field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da6-e5b9-c0db-2061" />
-          </conditions>
-        </modifier>
-      </modifiers>
-      <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="3" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" name="Elite" hidden="false" id="3b07-8ceb-603c-b6c6" import="true">
-      <categoryLinks>
-        <categoryLink id="e068-04b2-f137-3e91" name="Elites" hidden="false" targetId="13ad-bfb7-1c73-0b79" primary="true" />
+        <categoryLink id="eaec-4cb1-1915-d74c" name="Allies" hidden="false" targetId="faa9-9aa1-c626-49ce" primary="true" />
       </categoryLinks>
       <costs>
-        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
+        <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="2" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" name="Guard" hidden="false" id="60b7-07d1-e5e9-c775" import="true">
+    <selectionEntry type="unit" name="Scout" hidden="false" id="b934-a2b8-ec13-9e21" import="true">
       <categoryLinks>
-        <categoryLink id="20ce-4ade-a0d2-cd1f" name="Guards" hidden="false" targetId="e3b7-3def-2bf5-2577" primary="true" />
+        <categoryLink id="eb8e-086b-14aa-219b" name="Scouts" hidden="false" targetId="723b-5cbb-29f1-961e" primary="true" />
       </categoryLinks>
       <costs>
         <cost name="Honour" typeId="42f6-5fc8-5ad6-ffee" value="1" />
@@ -236,10 +73,8 @@
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink name="Leader" hidden="false" id="50c2-87c0-4054-eaa4" type="selectionEntry" targetId="8fc2-6981-a3a3-f31b" import="true" />
-    <entryLink name="Hero" hidden="false" id="cf71-89e9-627f-8408" type="selectionEntry" targetId="1c77-0724-4af4-1e00" import="true" />
     <entryLink name="Warriors" hidden="false" id="0281-f4fb-c175-8d64" type="selectionEntry" targetId="e8d6-bed8-d837-b2d3" import="true" />
-    <entryLink name="Marksmen" hidden="false" id="755f-cd2b-dc8d-18a1" type="selectionEntry" targetId="a3ef-46e1-0515-513c" import="true" />
-    <entryLink name="Elite" hidden="false" id="7e30-38ae-96ad-4d78" type="selectionEntry" targetId="3b07-8ceb-603c-b6c6" import="true" />
-    <entryLink name="Guard" hidden="false" id="1a7a-90d3-cd7a-a5a2" type="selectionEntry" targetId="60b7-07d1-e5e9-c775" import="true" />
+    <entryLink name="Ally" hidden="false" id="53f2-f9ff-c216-509f" type="selectionEntry" targetId="af59-7588-218c-6dfa" import="true" />
+    <entryLink name="Scout" hidden="false" id="bbcc-dbd4-cdd4-f6e8" type="selectionEntry" targetId="b934-a2b8-ec13-9e21" import="true" />
   </entryLinks>
 </catalogue>

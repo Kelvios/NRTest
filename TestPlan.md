@@ -1,78 +1,37 @@
-# Test plan: Modifiers Lab (M1 to M10)
+# Test plan: Second Modifiers Lab (X1 to X4)
 
-Data revision under test: 1 (`Test.gst`, `Test.cat`). Source spec: `Kelvios/Boot-Camp`, `templates/experiments/modifiers.spec.yaml`.
+Data revision under test: 2 (`Test.gst`, `Test.cat`). Source spec: `Kelvios/Boot-Camp`, `templates/experiments/modifiers2.spec.yaml`.
 
-Nothing here has been run in the app before. These are modifier, condition and repeat shapes that only pass the static validator.
+These four cases check rule shapes that the first Modifiers Lab did not cover. None has been run in the app before.
 
-## Setup
+Two things could not be tested with the current builder and are left out: changing an entry's description text, and counting selections in child forces.
 
-1. Load `Test.gst` and `Test.cat` in New Recruit (game system first). Game system name: Test.
-2. Create a roster and set its cost limit high (50 Honour) so cost caps don't hide the rule under test.
-3. All experiment options sit on the Leader. Start each test from a roster with just the Leader unless the test says otherwise.
-4. Record your results in `TestResults.md`, and the New Recruit version at the top.
+## Before you start
 
-## M1: Hidden by a condition (`set hidden`, `lessThan`)
+1. Load the new `Test.gst` and `Test.cat` in New Recruit. The game system is called Test. Because the files have the same name as last time, remove the old copy first if the app keeps showing the old options.
+2. Create a roster and set its cost limit high (50 Honour) so the cost limit does not hide the rule being tested.
+3. Write your results in `TestResults.md`, and note the New Recruit version at the top.
 
-Build: Start with the Leader only. Open the Leader's group "M1".
+## X1: Showing an option only to certain unit types (the instanceOf and notInstanceOf conditions)
 
-Expect: "M1 Hidden until a Hero" is absent. Add a Hero: it appears. Remove the Hero: it disappears again.
+What to do: Start a new roster. The Leader is already in it. Add one Warriors unit. Open the options on the Leader, then open the options on the Warriors unit.
 
-## M2: `decrement` on a cost
+What should happen: Two test options exist, named "X1a Only for Warriors" and "X1b Not for Warriors". On the Leader you should see only "X1b Not for Warriors". On the Warriors unit you should see only "X1a Only for Warriors". If you see both, neither, or the reverse, write down which.
 
-Build: Add 1 Marksmen, then 2 Warriors, then remove one Warriors.
+## X2: Rounding a repeat up (the round_up setting)
 
-Expect: Marksmen costs 3 alone, 2 with 2 Warriors, back to 3 with 1 Warriors.
+What to do: Start a new roster with just the Leader. Add Warriors units one at a time, and after each one try to add a Scout, then remove the Scout again. Try to add a second Scout as well each time.
 
-## M3: `set` on a constraint value (Marksmen cap)
+What should happen: With no Warriors, a Scout should show an error. With 1 Warriors, one Scout is allowed (the count rounds 1 half up to 1). With 2 Warriors, still one Scout. With 3 Warriors, two Scouts are allowed and a third shows an error.
 
-Build: Add 2 Marksmen. Then add a Hero. Then add a third and a fourth Marksmen.
+## X3: A limit expressed as a percentage of the roster's cost (the percent setting)
 
-Expect: 2 Marksmen: error (cap 1). With a Hero the cap becomes 3: the error clears and a third is fine. A fourth errors.
+What to do: Start a new roster with just the Leader (cost 1). Add one Ally (cost 2). Then add a Warriors unit (cost 2). Then add a second Ally. Then add a second Warriors unit.
 
-## M4: `decrement` on a constraint value (Warriors cap). Run without a Hero
+What should happen: Allies may cost at most 50 percent of the whole roster. One Ally on its own with the Leader is 2 of 3, so the roster should show an error about Allies. Adding the Warriors makes it 2 of 5 and the error should clear. A second Ally makes it 4 of 7 and the error should return. A second Warriors makes it 4 of 9 and the error should clear again.
 
-Build: Add 4 Warriors, then a fifth, then add 1 Marksmen.
+## X4: A change attached to one link rather than to the entry (a modifier on a link)
 
-Expect: 4 Warriors fine; a fifth errors. With a Marksmen the cap drops to 3, so 4 Warriors error.
+What to do: Start a new roster with just the Leader and one Warriors unit. Look for the option "X4 Link probe" on the Leader and on the Warriors unit. Then add an Ally and look again. Then remove the Ally and look again.
 
-## M5: Condition groups (`and`, `or`)
-
-Build: Open Leader group "M5" in four rosters: Leader only; plus a Hero only; plus a Marksmen only; plus both.
-
-Expect: "M5a" and "M5b" are visible or hidden together. Expect hidden, visible, visible, visible in that order for both.
-
-## M6: Condition types on the number of Heroes
-
-Build: Open Leader group "M6" with 0, 1 and 2 Heroes.
-
-Expect: 0 Heroes: lessThan 1, notEqualTo 1, atMost 1. 1 Hero: equalTo 1, atMost 1. 2 Heroes: greaterThan 1, notEqualTo 1, atLeast 2. No other probes visible.
-
-## M7: `increment` on a cost, repeated `of: unit`
-
-Build: Add a Hero alone, then add 1 Warriors, then add 1 Elite (ignore its error).
-
-Expect: Hero costs 2 alone, 3 with 1 Warriors, 4 with a Warriors and an Elite.
-
-## M8a: Repeat `value: 2` in a force-category limit (Elites)
-
-Build: Add 1, 2, 3 then 4 Warriors, trying an Elite (then a second) at each step.
-
-Expect: 1 Warriors: an Elite errors. 2: one Elite fine. 3: still one. 4: two.
-
-## M8b: Repeat `repeats: 2` in a force-category limit (Guards)
-
-Build: Add 1 Warriors and try Guards, then add a second Warriors.
-
-Expect: 1 Warriors: two Guards fine, a third errors. 2 Warriors: four Guards fine.
-
-## M9: Constraint on a cost field
-
-Build: Open Leader group "M9". Take Trinket A, then Trinket B (2 Honour each, max 3 in the group).
-
-Expect: One Trinket fine. Both (4 Honour) error. If not, note what the constraint appears to count.
-
-## M10: `set` and `append` on a name
-
-Build: Add 1 Warriors, a Marksmen and a Hero. Then remove the Warriors.
-
-Expect: With a Warriors: "Marksmen (Supported)" and "Hero (Veteran)". Without: names revert.
+What should happen: The option "X4 Link probe" should always be visible on the Warriors unit. On the Leader it should be hidden while there are no Allies, appear when an Ally is added, and disappear again when the Ally is removed.

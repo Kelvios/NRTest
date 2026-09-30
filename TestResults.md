@@ -1,73 +1,33 @@
-# Test results: Modifiers Lab (M1 to M10)
+# Test results: Second Modifiers Lab (X1 to X4)
 
-Data revision tested: 1
-Date: 30SEP2026
-New Recruit version: New Recruit 36.28
+Data revision tested: 2
 
-Fill in each Result line: PASS or FAIL, then exactly what the app did (error text, greyed option, wrong cost, option that should or shouldn't have appeared).
+Date:
 
-## M1: Hidden by a condition (`set hidden`, `lessThan`)
+New Recruit version:
 
-Expect: "M1 Hidden until a Hero" is absent. Add a Hero: it appears. Remove the Hero: it disappears again.
+For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (error text, an option that appeared or did not, a cost that looked wrong).
 
-Result: As expected.
+## X1: Showing an option only to certain unit types (the instanceOf and notInstanceOf conditions)
 
-## M2: `decrement` on a cost
+What should happen: Two test options exist, named "X1a Only for Warriors" and "X1b Not for Warriors". On the Leader you should see only "X1b Not for Warriors". On the Warriors unit you should see only "X1a Only for Warriors". If you see both, neither, or the reverse, write down which.
 
-Expect: Marksmen costs 3 alone, 2 with 2 Warriors, back to 3 with 1 Warriors.
+Result: 
 
-Result: As expected.
+## X2: Rounding a repeat up (the round_up setting)
 
-## M3: `set` on a constraint value (Marksmen cap)
+What should happen: With no Warriors, a Scout should show an error. With 1 Warriors, one Scout is allowed (the count rounds 1 half up to 1). With 2 Warriors, still one Scout. With 3 Warriors, two Scouts are allowed and a third shows an error.
 
-Expect: 2 Marksmen: error (cap 1). With a Hero the cap becomes 3: the error clears and a third is fine. A fourth errors.
+Result: 
 
-Result: As expected.
+## X3: A limit expressed as a percentage of the roster's cost (the percent setting)
 
-## M4: `decrement` on a constraint value (Warriors cap). Run without a Hero
+What should happen: Allies may cost at most 50 percent of the whole roster. One Ally on its own with the Leader is 2 of 3, so the roster should show an error about Allies. Adding the Warriors makes it 2 of 5 and the error should clear. A second Ally makes it 4 of 7 and the error should return. A second Warriors makes it 4 of 9 and the error should clear again.
 
-Expect: 4 Warriors fine; a fifth errors. With a Marksmen the cap drops to 3, so 4 Warriors error.
+Result: 
 
-Result: As expected.
+## X4: A change attached to one link rather than to the entry (a modifier on a link)
 
-## M5: Condition groups (`and`, `or`)
+What should happen: The option "X4 Link probe" should always be visible on the Warriors unit. On the Leader it should be hidden while there are no Allies, appear when an Ally is added, and disappear again when the Ally is removed.
 
-Expect: "M5a" and "M5b" are visible or hidden together. Expect hidden, visible, visible, visible in that order for both.
-
-Result: This is fine, the test is written a way that I did not understand for a long time, you should use full sentences and english to explain the test.
-
-## M6: Condition types on the number of Heroes
-
-Expect: 0 Heroes: lessThan 1, notEqualTo 1, atMost 1. 1 Hero: equalTo 1, atMost 1. 2 Heroes: greaterThan 1, notEqualTo 1, atLeast 2. No other probes visible.
-
-Result: These all work as expected.
-
-## M7: `increment` on a cost, repeated `of: unit`
-
-Expect: Hero costs 2 alone, 3 with 1 Warriors, 4 with a Warriors and an Elite.
-
-Result: As expected.
-
-## M8a: Repeat `value: 2` in a force-category limit (Elites)
-
-Expect: 1 Warriors: an Elite errors. 2: one Elite fine. 3: still one. 4: two.
-
-Result: Elite errors unless there are two Warriors for each Elite.
-
-## M8b: Repeat `repeats: 2` in a force-category limit (Guards)
-
-Expect: 1 Warriors: two Guards fine, a third errors. 2 Warriors: four Guards fine.
-
-Result: I can add 2 guards for each infantry I add
-
-## M9: Constraint on a cost field
-
-Expect: One Trinket fine. Both (4 Honour) error. If not, note what the constraint appears to count.
-
-Result: A expected.
-
-## M10: `set` and `append` on a name
-
-Expect: With a Warriors: "Marksmen (Supported)" and "Hero (Veteran)". Without: names revert.
-
-Result: As expected.
+Result: 
