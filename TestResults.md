@@ -1,4 +1,4 @@
-# Test results: Infamy Infamy, Britons (B1 to B8)
+# Test results: Infamy Infamy, Gauls and Germans (GA1 to GA5, GE1 to GE5, R1)
 
 Data revision tested: 1
 
@@ -8,50 +8,68 @@ New Recruit version:
 
 For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (totals, errors, missing or extra units).
 
-## B1: Britons are offered, and one Warlord is required
+## GA1: Gauls are offered, and one Warlord is required
 
-What should happen: Britons should be offered alongside the two Roman armies. The empty Army should report that it needs one Warlord. With one Leader (Status III, Warlord) it should clear. A second should show an error.
-
-Result: 
-
-## B2: Group prices add up in Points
-
-What should happen: Points should total 83 (10 + 19 + 19 + 14 + 14 + 7). Support should show 0 or nothing.
+What should happen: Gauls should be offered alongside the other four armies. The empty Army should report that it needs one Warlord. With one Leader (Status III, Warlord) it should clear. A second should show an error.
 
 Result: 
 
-## B3: Stat lines
+## GA2: Gauls: group prices add up in Points
+
+What should happen: Points should total 76 (10 + 18 + 13 + 13 + 7 + 15). Support should show 0 or nothing.
+
+Result: 
+
+## GA3: Gauls: stat lines
 
 What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
 
 Result: 
 
-## B4: Which units are offered under each heading
+## GA4: Gauls: which units are offered under each heading
 
-What should happen: Foot Groups (5): Noble Warriors, Warriors, Fanatical Warriors, Tribal Levy, Allied Warriors. Skirmisher Groups (2): Tribal Javelins, Tribal Slingers. Mounted Groups (1): Tribal Cavalry. War Engines: nothing. There should be no Roman units.
-
-Result: 
-
-## B5: Chariots are capped by the number of Warriors Groups
-
-What should happen: With no Warriors or Noble Warriors, one Chariots should show an error. With one Noble Warriors, one Chariots is fine and a second errors. With one Noble Warriors and one Warriors, two Chariots are fine and a third errors. After removing the Noble Warriors, only one is allowed, so two Chariots should error. Each Chariots costs 3 Support.
+What should happen: Foot Groups (6): Ambaxtoi Noble Warriors, Warriors, Fanatical Warriors, Tribal Levy, British Mercenaries, German Mercenaries. Skirmisher Groups (3): Tribal Javelins, Tribal Slingers, Woodsman Archers. Mounted Groups (2): Noble Cavalry, Tribal Cavalry. War Engines: nothing. No Roman or Briton-only units.
 
 Result: 
 
-## B6: Support costs and limits
+## GA5: Gauls: support options, costs and limits
 
-What should happen: The third Wagon (limit 2), second Musician (limit 1), second Secret Way (limit 1), second Dyke (limit 1) and second Fortified Wall (limit 1) should each show an error. Three Faggots should show no error. Support should total 6 + 4 + 8 + 24 + 40 + 6 = 88, counting every item you added.
-
-Result: 
-
-## B7: Which support options are offered
-
-What should happen: You should see: Supra Numerum Leader (Support), Wagon, Musician, Faggots, Status I Leader (Support), Chariots, Battering Ram, Secret Way, Status II Leader (Support), Dyke, Fortified Wall. You should not see Palisade, Exploratores, Capsarius, Mule Train or Prepared Defences.
+What should happen: The Support options should be: Supra Numerum Leader (Support), Gallic Stewards, Wagon, Musician, Faggots, Status I Leader (Support), Battering Ram, Status II Leader (Support), Palisade, Fortified Wall. There should be no Dyke, Chariots, Secret Way, Mule Train or Prepared Defences. Errors should appear on the third Wagon (limit 2), second Musician (limit 1), third Palisade (limit 2) and second Fortified Wall (limit 1). Faggots and Gallic Stewards should show no error. Support should total 6 + 4 + 36 + 40 + 6 + 3 = 95.
 
 Result: 
 
-## B8: The Roman armies still work
+## GE1: Germans are offered, and one Warlord is required
 
-What should happen: Points should total 67 (10 + 22 + 22 + 13), as in the earlier test.
+What should happen: Germans should be offered. The empty Army should report that it needs one Warlord. With one Leader it should clear. A second should show an error.
+
+Result: 
+
+## GE2: Germans: group prices add up in Points
+
+What should happen: Points should total 85 (10 + 17 + 15 + 15 + 17 + 11). Support should show 0 or nothing.
+
+Result: 
+
+## GE3: Germans: stat lines
+
+What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
+
+Result: 
+
+## GE4: Germans: which units are offered under each heading
+
+What should happen: Foot Groups (5): Oathsworn Warriors, Warriors, Fanatical Warriors, Tribal Levy, Foederati. Skirmisher Groups (3): Tribal Javelins, Tribal Slingers, Woodsman Archers. Mounted Groups (2): Germanic Cavalry, Foederati Cavalry. War Engines: nothing.
+
+Result: 
+
+## GE5: Germans: support options, costs and limits
+
+What should happen: The Support options should be: Supra Numerum Leader (Support), Wagon, Wailing Women, Musician, Faggots, Status I Leader (Support), Battering Ram, Arminius' Wall, Secret Way, Status II Leader (Support). There should be no Dyke, Palisade, Fortified Wall or Chariots. Errors should appear on the third Wagon (limit 2), second Musician (limit 1) and second Secret Way (limit 1). Wailing Women, Arminius' Walls and Faggots should show no error. Support should total 6 + 4 + 8 + 6 + 9 + 6 = 39.
+
+Result: 
+
+## R1: The earlier armies still work
+
+What should happen: Late Republican Romans should total 67 Points (10 + 22 + 22 + 13). Britons should total 83 Points (10 + 19 + 19 + 14 + 14 + 7).
 
 Result: 
