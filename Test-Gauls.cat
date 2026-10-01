@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0f0b-c508-3689-73ed" name="Gauls" gameSystemId="sys-d58b-f1b4-607c-9c48" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" authorName="Kelvin">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0f0b-c508-3689-73ed" name="Gauls" gameSystemId="sys-d58b-f1b4-607c-9c48" gameSystemRevision="10" revision="10" battleScribeVersion="2.03" type="catalogue" authorName="Kelvin">
   <sharedSelectionEntries>
     <selectionEntry type="model" name="Leader (Status III, Warlord)" hidden="false" id="621d-dd66-dca1-5388" import="true">
       <categoryLinks>

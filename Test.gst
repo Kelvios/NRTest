@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-d58b-f1b4-607c-9c48" name="Infamy Infamy" revision="1" battleScribeVersion="2.03" type="gameSystem" authorName="Kelvin">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-d58b-f1b4-607c-9c48" name="Infamy Infamy" revision="10" battleScribeVersion="2.03" type="gameSystem" authorName="Kelvin">
   <costTypes>
     <costType id="e89e-26b3-ba84-d897" name="Points" defaultCostLimit="-1" hidden="false" />
     <costType id="7c9a-b7c3-373d-72a6" name="Support" defaultCostLimit="-1" hidden="false" />

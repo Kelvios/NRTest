@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="8063-a8e0-49da-fab2" name="Late Republican Romans" gameSystemId="sys-d58b-f1b4-607c-9c48" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" authorName="Kelvin">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="8063-a8e0-49da-fab2" name="Late Republican Romans" gameSystemId="sys-d58b-f1b4-607c-9c48" gameSystemRevision="10" revision="10" battleScribeVersion="2.03" type="catalogue" authorName="Kelvin">
   <sharedSelectionEntries>
     <selectionEntry type="model" name="Centurion (Status III, Warlord)" hidden="false" id="964e-7e4c-4e20-06bd" import="true">
       <categoryLinks>
