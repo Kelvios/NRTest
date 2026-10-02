@@ -1,80 +1,56 @@
-# Test plan: Infamy Infamy, Gauls and Germans (GA1 to GA5, GE1 to GE5, R1)
+# Test plan: Tribal 2nd Edition revision 5, the Shaman as a Character (SH1 to SH7)
 
-Data revision under test: 1. Source spec: `Kelvios/Boot-Camp`, `systems/Infamy/spec.yaml`.
+Data revision under test: Tribal2E revision 5 (published here as the shared test revision 11). Source spec: `Kelvios/Boot-Camp`, `systems/Tribal2E/spec.yaml`.
 
-This adds the last two armies, the Gauls and the Germans. They use the same rule shapes that already passed for the Britons, so nothing new is being tried; the tests check that every price, stat line, unit and support limit was copied correctly. R1 checks that the earlier armies have not changed.
+Kelvin ruled on 2026-10-02 that the Shaman is a Character. So the Shaman is now offered the Skills marked "Characters only" in the book (Long Shot, Tough, Berserker, Strong, Duellist, Champion) and Heavy Armour. The Weapon Mastery and Armour groups are built the same way as the Hero's, which already passed testing. Warlord-only Skills (Tactician, Concealment, Respected, Revered) are still not offered, and Chariots and Counting Coup are still not offered either, because the book names Warlord and Heroes, or Warriors or Heroes, for those.
 
-The files are `Test.gst` and five catalogues: `Test.cat` (Late Republican Romans), `Test-EI.cat` (Early Imperial Romans), `Test-Britons.cat`, `Test-Gauls.cat` and `Test-Germans.cat`.
+The files are `Test.gst` and `Test.cat`. They replace the Infamy files that were here before (Infamy is now in its own repo, `Kelvios/InfamyInfamy`).
 
 ## Before you start
 
-1. Remove the old "Infamy Infamy" game system and its catalogues from New Recruit, then load `Test.gst` and all five `.cat` files. Load the game system first.
+1. Remove any old game system from New Recruit that came from this NRTest repo, or press update and check that the game system is now TRIBAL 2nd Edition. Load `Test.gst` first, then `Test.cat`.
 2. New Recruit does not add anything to a new roster for you. Every force and every unit has to be added by hand.
-3. Do GA1 and GA2 in one roster, in order, then GA5 in the same or a fresh Gauls roster. Do the same for the Germans.
-4. Write your results in `TestResults.md`, and note the New Recruit version at the top. If you cannot reach the file, say each case's result in the chat and I will record it.
+3. Set the roster's cost limit high (say 20 Honour) so it does not hide what is being tested.
+4. Write your results in `TestResults.md`, and note the New Recruit version at the top. If you cannot reach the file, say each result in the chat.
 
-## GA1: Gauls are offered, and one Warlord is required
+## SH1: The Shaman is offered, costs 1 Honour, and only one is allowed
 
-What to do: Load the game system with all five catalogues. Start a new roster, check that "Gauls" is among the armies, pick it and add an Army force. Look at what is reported missing. Add one "Leader (Status III, Warlord)", then try to add a second.
+What to do: Load the game system. Start a roster, add a Warband force, add the Warlord (it is required), then add one "Shaman (optional rule)". Then try to add a second Shaman. Look at the Honour total.
 
-What should happen: Gauls should be offered alongside the other four armies. The empty Army should report that it needs one Warlord. With one Leader (Status III, Warlord) it should clear. A second should show an error.
+What should happen: The Honour total should be 1 (Warlord 0 plus Shaman 1). The second Shaman should show an error.
 
-## GA2: Gauls: group prices add up in Points
+## SH2: The Shaman is now offered the Characters-only Skills
 
-What to do: In the same roster add one "Ambaxtoi, Noble Warriors" (18), two "Warriors" (13 each), one "Tribal Levy" (7) and one "Noble Cavalry" (15).
+What to do: Open the Shaman's "Skills (choose up to 3)" list and its "Weapon Mastery Skill" group, and read every option.
 
-What should happen: Points should total 76 (10 + 18 + 13 + 13 + 7 + 15). Support should show 0 or nothing.
+What should happen: The list should include the four Skills newly added for the Shaman: Long Shot, Tough, Berserker and Strong. It should also still include Agile, Cunning, Deadly Shot, Fearsome, Hard Target, Ranger, Savage, Survival Instinct, Throwing Weapons, Seasoned, and the Shaman's own Curse, Divination, Healing, Rat Cunning and Evil Eye. The Weapon Mastery group should offer Adept, Duellist and Champion. The list should not include Tactician, Concealment, Respected, Revered or Elite Marksmen, which belong to the Warlord or to Marksmen only.
 
-## GA3: Gauls: stat lines
+## SH3: Weapon Mastery Skills exclude each other and count toward the Shaman's 3 Skills
 
-What to do: Open the stat lines of these Groups. "Ambaxtoi, Noble Warriors": Elite Warriors, strength 10, Medium armour, Mixed weapons, Aggressive Attack 1, Step Out 1, Mob, Shieldwall, Fervour, 18 points. "Noble Cavalry": Elite Mounted Warriors, strength 6, Medium, Mixed, Aggressive Attack 1, Step Out 1, Stewards, 15 points. "Woodsman Archers": Skirmishers, strength 6, no armour, Bow, Aggressive Attack dash, Step Out 2, Darken the Sky, Woodsmen, Supra Numerum, 7 points. "British Mercenaries": Warriors, strength 10, Medium, Mixed, Aggressive Attack 2, Step Out 2, Mob, Fervour, 14 points.
+What to do: On the Shaman, take Adept, then take Duellist. Then take Champion. Then take Tough and Strong, and keep adding Skills until you get an error.
 
-What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
+What should happen: Taking Duellist after Adept should replace Adept, because only one of Adept, Duellist or Champion can be held. Taking Champion should replace Duellist. The Weapon Mastery pick counts as one of the three Skills. With Champion, Tough and Strong the Shaman is at three Skills with no error. A fourth Skill should show an error.
 
-## GA4: Gauls: which units are offered under each heading
+## SH4: The Shaman can take Heavy Armour, and only one kind of armour
 
-What to do: Look at the units you can add under each heading in a Gauls Army.
+What to do: On the Shaman, open "Historical Special Rules" and look for the Armour group. Take Light Armour, then take Heavy Armour. Read the Honour total each time. Also read the other Historical Rules the Shaman is offered.
 
-What should happen: Foot Groups (6): Ambaxtoi Noble Warriors, Warriors, Fanatical Warriors, Tribal Levy, British Mercenaries, German Mercenaries. Skirmisher Groups (3): Tribal Javelins, Tribal Slingers, Woodsman Archers. Mounted Groups (2): Noble Cavalry, Tribal Cavalry. War Engines: nothing. No Roman or Briton-only units.
+What should happen: There should be an Armour group offering Light Armour and Heavy Armour. Taking Heavy Armour after Light should replace Light. Light costs 0.5 Honour and Heavy costs 1. The Shaman should also be offered Cavalry, and should not be offered Chariots, Counting Coup, Assegai or Rally Around the Flag.
 
-## GA5: Gauls: support options, costs and limits
+## SH5: Honour adds up for a built Shaman
 
-What to do: In a Gauls roster look at the options under Support. Then add three Wagons (2 each), two Musicians (2), three Palisades (12 each), two Fortified Walls (20 each), three Faggots (2 each) and three Gallic Stewards (1 each). Note which give an error and read the Support total.
+What to do: Start a fresh roster with the Warlord and one Shaman. Give the Shaman Tough (Veteran Skill), Strong (Elite Skill) and Heavy Armour. Read the Honour total.
 
-What should happen: The Support options should be: Supra Numerum Leader (Support), Gallic Stewards, Wagon, Musician, Faggots, Status I Leader (Support), Battering Ram, Status II Leader (Support), Palisade, Fortified Wall. There should be no Dyke, Chariots, Secret Way, Mule Train or Prepared Defences. Errors should appear on the third Wagon (limit 2), second Musician (limit 1), third Palisade (limit 2) and second Fortified Wall (limit 1). Faggots and Gallic Stewards should show no error. Support should total 6 + 4 + 36 + 40 + 6 + 3 = 95.
+What should happen: Honour should total 5 (Shaman 1, Tough 1, Strong 2, Heavy Armour 1; Warlord 0).
 
-## GE1: Germans are offered, and one Warlord is required
+## SH6: The Shaman's note reads correctly
 
-What to do: Start a new roster, check that "Germans" is among the armies, pick it and add an Army force. Look at what is reported missing. Add one "Leader (Status III, Warlord)", then try to add a second.
+What to do: Open the Shaman's stat line and read the Notes text.
 
-What should happen: Germans should be offered. The empty Army should report that it needs one Warlord. With one Leader it should clear. A second should show an error.
+What should happen: The Notes should say the Shaman gets 1 free Veteran Skill for any 1 Unit, the same as a Hero's free Veteran Skill, and should no longer talk about a disagreement in the book or about choosing what your group agreed.
 
-## GE2: Germans: group prices add up in Points
+## SH7: Heroes and the Warlord are unchanged
 
-What to do: In the same roster add one "Oathsworn Warriors" (17), two "Warriors" (15 each), one "Foederati" (17) and one "Germanic Cavalry" (11).
+What to do: Add a Hero. Open its Skills and Historical Special Rules. Take Adept then Duellist, and take Light Armour then Heavy Armour.
 
-What should happen: Points should total 85 (10 + 17 + 15 + 15 + 17 + 11). Support should show 0 or nothing.
-
-## GE3: Germans: stat lines
-
-What to do: Open the stat lines of these Groups. "Oathsworn Warriors": Elite Warriors, strength 10, Light armour, Mixed weapons, Aggressive Attack 1, Step Out 1, Mob, Shieldwall, Fervour, Foot Cavalry, 17 points. "Foederati": Warriors, strength 8, Medium, Mixed, Aggressive Attack 1, Step Out 1, Mob, Fervour, Shieldwall, Roman Style, 17 points. "Germanic Cavalry": Mounted Warriors, strength 6, Light, Mixed, Aggressive Attack "Always", Step Out dash, Impetuous, Foot Cavalry, 11 points. "Foederati Cavalry": Mounted Warriors, strength 6, Medium, Mixed, Aggressive Attack 1, Step Out 1, Impetuous, 14 points.
-
-What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
-
-## GE4: Germans: which units are offered under each heading
-
-What to do: Look at the units you can add under each heading in a Germans Army.
-
-What should happen: Foot Groups (5): Oathsworn Warriors, Warriors, Fanatical Warriors, Tribal Levy, Foederati. Skirmisher Groups (3): Tribal Javelins, Tribal Slingers, Woodsman Archers. Mounted Groups (2): Germanic Cavalry, Foederati Cavalry. War Engines: nothing.
-
-## GE5: Germans: support options, costs and limits
-
-What to do: In a Germans roster look at the options under Support. Then add three Wagons (2 each), two Musicians (2), two Secret Ways (4 each), three Wailing Women (2 each), three Arminius' Walls (3 each) and three Faggots (2 each). Note which give an error and read the Support total.
-
-What should happen: The Support options should be: Supra Numerum Leader (Support), Wagon, Wailing Women, Musician, Faggots, Status I Leader (Support), Battering Ram, Arminius' Wall, Secret Way, Status II Leader (Support). There should be no Dyke, Palisade, Fortified Wall or Chariots. Errors should appear on the third Wagon (limit 2), second Musician (limit 1) and second Secret Way (limit 1). Wailing Women, Arminius' Walls and Faggots should show no error. Support should total 6 + 4 + 8 + 6 + 9 + 6 = 39.
-
-## R1: The earlier armies still work
-
-What to do: Start one roster with Late Republican Romans: add an Army, one Centurion, two Roman Legionaries and one Legionary Recruits. Start another with Britons: add an Army, one "Leader (Status III, Warlord)", two "Noble Warriors", two "Warriors" and one "Tribal Levy".
-
-What should happen: Late Republican Romans should total 67 Points (10 + 22 + 22 + 13). Britons should total 83 Points (10 + 19 + 19 + 14 + 14 + 7).
+What should happen: The Hero should still have the Weapon Mastery group (Adept, Duellist, Champion, only one at a time) and the Armour group (Light or Heavy, only one at a time), working as they did before. The Hero's note still mentions its own free Veteran Skill.

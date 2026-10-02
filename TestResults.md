@@ -1,75 +1,51 @@
-# Test results: Infamy Infamy, Gauls and Germans (GA1 to GA5, GE1 to GE5, R1)
+# Test results: Tribal 2nd Edition revision 5, the Shaman as a Character (SH1 to SH7)
 
-Data revision tested: 1
+Data revision tested: Tribal2E revision 5 (test revision 11)
 
 Date:
 
 New Recruit version:
 
-For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed (totals, errors, missing or extra units).
+For each case, write PASS or FAIL on the Result line, then say in plain words what the app actually showed.
 
-## GA1: Gauls are offered, and one Warlord is required
+## SH1: The Shaman is offered, costs 1 Honour, and only one is allowed
 
-What should happen: Gauls should be offered alongside the other four armies. The empty Army should report that it needs one Warlord. With one Leader (Status III, Warlord) it should clear. A second should show an error.
-
-Result: 
-
-## GA2: Gauls: group prices add up in Points
-
-What should happen: Points should total 76 (10 + 18 + 13 + 13 + 7 + 15). Support should show 0 or nothing.
+What should happen: The Honour total should be 1 (Warlord 0 plus Shaman 1). The second Shaman should show an error.
 
 Result: 
 
-## GA3: Gauls: stat lines
+## SH2: The Shaman is now offered the Characters-only Skills
 
-What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
-
-Result: 
-
-## GA4: Gauls: which units are offered under each heading
-
-What should happen: Foot Groups (6): Ambaxtoi Noble Warriors, Warriors, Fanatical Warriors, Tribal Levy, British Mercenaries, German Mercenaries. Skirmisher Groups (3): Tribal Javelins, Tribal Slingers, Woodsman Archers. Mounted Groups (2): Noble Cavalry, Tribal Cavalry. War Engines: nothing. No Roman or Briton-only units.
+What should happen: The list should include the four Skills newly added for the Shaman: Long Shot, Tough, Berserker and Strong. It should also still include Agile, Cunning, Deadly Shot, Fearsome, Hard Target, Ranger, Savage, Survival Instinct, Throwing Weapons, Seasoned, and the Shaman's own Curse, Divination, Healing, Rat Cunning and Evil Eye. The Weapon Mastery group should offer Adept, Duellist and Champion. The list should not include Tactician, Concealment, Respected, Revered or Elite Marksmen, which belong to the Warlord or to Marksmen only.
 
 Result: 
 
-## GA5: Gauls: support options, costs and limits
+## SH3: Weapon Mastery Skills exclude each other and count toward the Shaman's 3 Skills
 
-What should happen: The Support options should be: Supra Numerum Leader (Support), Gallic Stewards, Wagon, Musician, Faggots, Status I Leader (Support), Battering Ram, Status II Leader (Support), Palisade, Fortified Wall. There should be no Dyke, Chariots, Secret Way, Mule Train or Prepared Defences. Errors should appear on the third Wagon (limit 2), second Musician (limit 1), third Palisade (limit 2) and second Fortified Wall (limit 1). Faggots and Gallic Stewards should show no error. Support should total 6 + 4 + 36 + 40 + 6 + 3 = 95.
-
-Result: 
-
-## GE1: Germans are offered, and one Warlord is required
-
-What should happen: Germans should be offered. The empty Army should report that it needs one Warlord. With one Leader it should clear. A second should show an error.
+What should happen: Taking Duellist after Adept should replace Adept, because only one of Adept, Duellist or Champion can be held. Taking Champion should replace Duellist. The Weapon Mastery pick counts as one of the three Skills. With Champion, Tough and Strong the Shaman is at three Skills with no error. A fourth Skill should show an error.
 
 Result: 
 
-## GE2: Germans: group prices add up in Points
+## SH4: The Shaman can take Heavy Armour, and only one kind of armour
 
-What should happen: Points should total 85 (10 + 17 + 15 + 15 + 17 + 11). Support should show 0 or nothing.
-
-Result: 
-
-## GE3: Germans: stat lines
-
-What should happen: Each stat line and point cost should match. Write down any value that is wrong or missing.
+What should happen: There should be an Armour group offering Light Armour and Heavy Armour. Taking Heavy Armour after Light should replace Light. Light costs 0.5 Honour and Heavy costs 1. The Shaman should also be offered Cavalry, and should not be offered Chariots, Counting Coup, Assegai or Rally Around the Flag.
 
 Result: 
 
-## GE4: Germans: which units are offered under each heading
+## SH5: Honour adds up for a built Shaman
 
-What should happen: Foot Groups (5): Oathsworn Warriors, Warriors, Fanatical Warriors, Tribal Levy, Foederati. Skirmisher Groups (3): Tribal Javelins, Tribal Slingers, Woodsman Archers. Mounted Groups (2): Germanic Cavalry, Foederati Cavalry. War Engines: nothing.
-
-Result: 
-
-## GE5: Germans: support options, costs and limits
-
-What should happen: The Support options should be: Supra Numerum Leader (Support), Wagon, Wailing Women, Musician, Faggots, Status I Leader (Support), Battering Ram, Arminius' Wall, Secret Way, Status II Leader (Support). There should be no Dyke, Palisade, Fortified Wall or Chariots. Errors should appear on the third Wagon (limit 2), second Musician (limit 1) and second Secret Way (limit 1). Wailing Women, Arminius' Walls and Faggots should show no error. Support should total 6 + 4 + 8 + 6 + 9 + 6 = 39.
+What should happen: Honour should total 5 (Shaman 1, Tough 1, Strong 2, Heavy Armour 1; Warlord 0).
 
 Result: 
 
-## R1: The earlier armies still work
+## SH6: The Shaman's note reads correctly
 
-What should happen: Late Republican Romans should total 67 Points (10 + 22 + 22 + 13). Britons should total 83 Points (10 + 19 + 19 + 14 + 14 + 7).
+What should happen: The Notes should say the Shaman gets 1 free Veteran Skill for any 1 Unit, the same as a Hero's free Veteran Skill, and should no longer talk about a disagreement in the book or about choosing what your group agreed.
+
+Result: 
+
+## SH7: Heroes and the Warlord are unchanged
+
+What should happen: The Hero should still have the Weapon Mastery group (Adept, Duellist, Champion, only one at a time) and the Armour group (Light or Heavy, only one at a time), working as they did before. The Hero's note still mentions its own free Veteran Skill.
 
 Result: 

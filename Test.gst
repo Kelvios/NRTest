@@ -1,75 +1,72 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-d58b-f1b4-607c-9c48" name="Infamy Infamy" revision="10" battleScribeVersion="2.03" type="gameSystem" authorName="Kelvin">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-e140-121e-9b34-0be3" name="TRIBAL 2nd Edition" revision="11" battleScribeVersion="2.03" type="gameSystem" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
   <costTypes>
-    <costType id="e89e-26b3-ba84-d897" name="Points" defaultCostLimit="-1" hidden="false" />
-    <costType id="7c9a-b7c3-373d-72a6" name="Support" defaultCostLimit="-1" hidden="false" />
+    <costType id="2583-462d-9a3d-8b99" name="Honour" defaultValue="0" />
   </costTypes>
   <profileTypes>
-    <profileType id="8ffd-aeee-ace4-24ad" name="Group">
+    <profileType id="49d0-84ee-492f-492f" name="Unit">
       <characteristicTypes>
-        <characteristicType id="8399-5229-8ab6-30be" name="Type" />
-        <characteristicType id="1e86-00d5-78b8-cebe" name="Strength" />
-        <characteristicType id="1ffe-0648-62ea-d789" name="Armour" />
-        <characteristicType id="6c11-dcad-c329-860b" name="Weapons" />
-        <characteristicType id="7e26-4e3f-43fb-234a" name="Aggressive Attack" />
-        <characteristicType id="33bf-1756-6775-d9ed" name="Step Out" />
-        <characteristicType id="462f-1611-3539-7732" name="Characteristics" />
-      </characteristicTypes>
-    </profileType>
-    <profileType id="30f5-3a32-f497-de27" name="Leader">
-      <characteristicTypes>
-        <characteristicType id="0249-d186-45d4-3a71" name="Status" />
-        <characteristicType id="d79a-826f-2e0d-b47a" name="Command Initiatives" />
-        <characteristicType id="1bee-750e-84df-7d3f" name="Command Range (in)" />
+        <characteristicType id="aea1-39b1-ec9b-475a" name="Wounds" />
+        <characteristicType id="1200-2470-7a16-e426" name="Skills" />
+        <characteristicType id="fb14-0b46-30b6-76a9" name="Notes" />
       </characteristicTypes>
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="d617-67cc-c0b4-4e6b" name="Warlord" hidden="false" />
-    <categoryEntry id="885b-7415-6d98-dcdf" name="Leaders" hidden="false" />
-    <categoryEntry id="46c4-e0cf-6392-bede" name="Foot Groups" hidden="false" />
-    <categoryEntry id="59ac-b001-7034-b837" name="Skirmisher Groups" hidden="false" />
-    <categoryEntry id="670f-fc13-6b38-62d2" name="Mounted Groups" hidden="false" />
-    <categoryEntry id="204f-52e6-bf92-627a" name="War Engines" hidden="false" />
-    <categoryEntry id="593d-f6c4-10ed-66df" name="Support" hidden="false" />
+    <categoryEntry id="21fb-7998-9dc4-5fd0" name="Warlord" hidden="false" />
+    <categoryEntry id="cdf2-4f60-5c31-a783" name="Heroes" hidden="false" />
+    <categoryEntry id="a20b-aa4e-9045-9c20" name="Warriors" hidden="false" />
+    <categoryEntry id="ef8f-b97c-ea97-503e" name="Marksmen" hidden="false" />
+    <categoryEntry id="cd73-16c4-bac1-dd3f" name="Shaman (optional rule)" hidden="false" />
+    <categoryEntry id="98ce-fd5f-59ba-0e1a" name="Historical Rules" hidden="false" />
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="522e-89c1-12a7-344a" name="Army" hidden="false">
+    <forceEntry id="1128-7928-73f4-74fc" name="Warband" hidden="false">
       <categoryLinks>
-        <categoryLink id="951e-9f40-e101-009c" name="Warlord" hidden="false" targetId="d617-67cc-c0b4-4e6b" type="category">
+        <categoryLink id="6b4a-25c7-3e18-ccad" name="Warlord" hidden="false" targetId="21fb-7998-9dc4-5fd0" type="category">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4543-04c6-1a9b-8459" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="debe-8650-f578-a72d" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4715-e63e-6393-f0f0" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19c3-d0a3-3f1b-bb6c" />
           </constraints>
         </categoryLink>
-        <categoryLink id="f026-5353-c750-e02e" name="Leaders" hidden="false" targetId="885b-7415-6d98-dcdf" type="category">
+        <categoryLink id="a62c-e2b5-4b3a-bbf8" name="Heroes" hidden="false" targetId="cdf2-4f60-5c31-a783" type="category">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="43cc-8cf4-86e5-5fdf" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fa53-eb38-a981-13d8" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8864-7aeb-906c-22ef" />
+          </constraints>
+          <modifiers>
+            <modifier type="increment" field="8864-7aeb-906c-22ef" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="a20b-aa4e-9045-9c20" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="8864-7aeb-906c-22ef" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef8f-b97c-ea97-503e" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink id="16c8-fa15-1885-674b" name="Warriors" hidden="false" targetId="a20b-aa4e-9045-9c20" type="category">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aab6-efe0-e3ff-cd0a" />
           </constraints>
         </categoryLink>
-        <categoryLink id="f1aa-e7af-d0f0-fb81" name="Foot Groups" hidden="false" targetId="46c4-e0cf-6392-bede" type="category">
+        <categoryLink id="97c0-7e4a-3adc-ee75" name="Marksmen" hidden="false" targetId="ef8f-b97c-ea97-503e" type="category">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5ed4-fd62-da55-be58" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e3c5-1f14-ded4-494b" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07c1-1442-e8ed-afdc" />
           </constraints>
         </categoryLink>
-        <categoryLink id="7aa3-a86f-125f-8334" name="Skirmisher Groups" hidden="false" targetId="59ac-b001-7034-b837" type="category">
+        <categoryLink id="9b80-89d0-5dac-16dc" name="Shaman (optional rule)" hidden="false" targetId="cd73-16c4-bac1-dd3f" type="category">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2d8d-ba4a-a5a7-46b8" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f389-7ca1-389d-185f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0d5-3047-0616-9f3c" />
           </constraints>
         </categoryLink>
-        <categoryLink id="c867-00e5-0bef-b5d0" name="Mounted Groups" hidden="false" targetId="670f-fc13-6b38-62d2" type="category">
+        <categoryLink id="7949-5fa3-abf7-d41a" name="Historical Rules" hidden="false" targetId="98ce-fd5f-59ba-0e1a" type="category">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2414-8004-d11d-b17b" />
-          </constraints>
-        </categoryLink>
-        <categoryLink id="995e-02b3-1e86-6eaa" name="War Engines" hidden="false" targetId="204f-52e6-bf92-627a" type="category">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04d4-0d21-a5c6-2ed3" />
-          </constraints>
-        </categoryLink>
-        <categoryLink id="4973-1d1a-73bd-aaf6" name="Support" hidden="false" targetId="593d-f6c4-10ed-66df" type="category">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a5c7-9cc5-b91c-db5b" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="125e-4b20-9787-4c94" />
           </constraints>
         </categoryLink>
       </categoryLinks>
