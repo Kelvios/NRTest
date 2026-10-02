@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-e140-121e-9b34-0be3" name="TRIBAL 2nd Edition" revision="11" battleScribeVersion="2.03" type="gameSystem" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-e140-121e-9b34-0be3" name="TRIBAL 2nd Edition" revision="12" battleScribeVersion="2.03" type="gameSystem" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
   <costTypes>
     <costType id="2583-462d-9a3d-8b99" name="Honour" defaultValue="0" />
   </costTypes>

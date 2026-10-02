@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="eb54-d675-a68b-b8d5" name="Primeval - Neanderthals" gameSystemId="sys-e140-121e-9b34-0be3" gameSystemRevision="12" revision="12" battleScribeVersion="2.03" type="catalogue" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" name="Fearsome (Veteran Skill)" hidden="false" id="e947-69a3-1823-29da" import="true">
+      <rules>
+        <rule id="1cab-abbe-da56-1d4b" name="Fearsome" hidden="false">
+          <description>+1 wound damage from hits with Strike Cards when fighting units of more than one miniature. Characters with dogs attached still count as a single miniature, so they are not subject to it. (Primeval update to the core Fearsome.)</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c77-7433-2e07-59dc" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Ferocious Fighter (Veteran Skill)" hidden="false" id="db2a-d84d-6c69-adea" import="true">
+      <rules>
+        <rule id="897f-becf-2324-72d8" name="Ferocious Fighter" hidden="false">
+          <description>Characters only. Its combat hand is not reduced as it loses wounds, but it is clumsy in defence: -2 to the value of any red Feint card it plays.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0b3-aa9d-7c16-c282" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Savage (Veteran Skill)" hidden="false" id="bc73-0579-85c9-902d" import="true">
+      <rules>
+        <rule id="b0ba-d68c-21b0-f5e6" name="Savage" hidden="false">
+          <description>+1 wound damage from hits with Strike Cards when fighting single-model units. (Primeval version; replaces the core Savage.)</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6922-1f70-38bf-f98b" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Adept [Skilled, short weapons only] (Veteran Skill)" hidden="false" id="07b2-2640-311b-0220" import="true">
+      <rules>
+        <rule id="2ba7-c7f0-07e4-dd78" name="Adept" hidden="false">
+          <description>After long training with their weapon of choice, this Unit has a Preferred Weapon Bonus of +2 instead of the normal +1. Cannot be combined with Champion or Duellist. Short weapons only (not enforced here).</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f75-9c23-be54-2f70" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Tough (Veteran Skill)" hidden="false" id="b420-48cb-5458-6fb7" import="true">
+      <rules>
+        <rule id="2cae-905e-007a-a2ca" name="Tough" hidden="false">
+          <description>Characters only. This Character begins the game with +1 Wound. This extra Wound does not increase its combat hand size.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3939-ae83-c0c2-ac30" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Champion (Elite Skill)" hidden="false" id="b750-3878-4b94-43da" import="true">
+      <rules>
+        <rule id="0a55-6a7c-2ed0-15db" name="Champion" hidden="false">
+          <description>Characters only. Preferred Weapon Bonus of +2 (instead of +1), plus a further +1 Preferred Weapon Bonus with the other Strike suit. Cannot be combined with Adept or Duellist.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b166-6a1c-6957-1446" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Strong (Elite Skill)" hidden="false" id="061c-0509-b6cd-16ec" import="true">
+      <rules>
+        <rule id="0013-baf6-423f-a7bd" name="Strong" hidden="false">
+          <description>Characters only. This Character causes +1 hit when it wins a hand-to-hand Exchange with a Spade or Club Strike card.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ecc-f091-6e9e-49d6" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="The One Who Knows (Elite Skill)" hidden="false" id="5f86-e2a3-8a09-f2fd" import="true">
+      <rules>
+        <rule id="ea50-825a-a328-edb7" name="The One Who Knows" hidden="false">
+          <description>Chiefs only. When the tribe is the attacker in a scenario it can plan its assault around the weather, using one of two options. Stalkers in the Mist: a hidden setup using a pair of counters for each unit. Hunters of the Storm: an icy storm in which all models have the Stocky Build rule, Throwing Weapons attacks draw two cards and play the worst, and Archers get -3 on missile attacks, until two Aces are played in one Exchange.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc6-b998-9af7-8c8f" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Short Weapon" hidden="false" id="9e4b-f58f-0200-8054" import="true">
+      <rules>
+        <rule id="1d26-7169-75ae-e86c" name="Short Weapon" hidden="false">
+          <description>Sword, axe, knife, club or similar. Gives the Preferred Weapon Bonus on Club Strike cards.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Long Weapon" hidden="false" id="2689-04aa-91c4-9ef1" import="true">
+      <rules>
+        <rule id="3f98-fa55-ceff-e7df" name="Long Weapon" hidden="false">
+          <description>Spear, long-axe, pike, polearm or similar. Gives the Preferred Weapon Bonus on Spade Strike cards.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" name="Chief (Warlord)" hidden="false" id="7e0b-0548-b4b9-9291" import="true">
+      <categoryLinks>
+        <categoryLink id="0c25-b8ba-52f3-62fe" name="Warlord" hidden="false" targetId="21fb-7998-9dc4-5fd0" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Chief (Warlord)" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="b906-9062-5f34-a32c">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">6</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-3</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Always fights and moves alone; never joins Heroes or Formations. Combat hand = 1 card per remaining Wound. Free bonus: 1 free Elite Skill for any 1 Unit in the warband (including itself), OR 1 free Veteran Skill for each of 2 Units -- apply this as a discount when you spend Honour on Skills.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d426-aeff-cb28-f274" name="No Ranged Weapons" hidden="false" targetId="2d34-6738-d8fc-3367" type="rule" />
+        <infoLink id="1d78-0afd-9306-0a74" name="Stocky Build" hidden="false" targetId="d6de-2038-1e32-3066" type="rule" />
+        <infoLink id="6736-2ed1-dbdf-fd84" name="Resilient" hidden="false" targetId="7b81-b54d-c49f-9d2b" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="5b50-fa83-f634-9838" defaultSelectionEntryId="5257-e506-792f-077a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a10a-ece1-eab8-2879" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4610-ef6b-c20c-1f3d" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Short Weapon" hidden="false" id="5257-e506-792f-077a" type="selectionEntry" targetId="9e4b-f58f-0200-8054" import="true" />
+            <entryLink name="Long Weapon" hidden="false" id="fdfb-7b31-a3c6-27ec" type="selectionEntry" targetId="2689-04aa-91c4-9ef1" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills (choose up to 3)" hidden="false" id="1662-0f4b-381f-57c9">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7971-9974-b412-4b9f" />
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Mastery Skill (choose up to 1: Adept or Champion)" hidden="false" id="8056-8d1c-ddcb-d542">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acc6-a58b-aea5-24ad" />
+              </constraints>
+              <entryLinks>
+                <entryLink name="Adept [Skilled, short weapons only] (Veteran Skill)" hidden="false" id="a34f-84cc-7160-0cc3" type="selectionEntry" targetId="07b2-2640-311b-0220" import="true" />
+                <entryLink name="Champion (Elite Skill)" hidden="false" id="7c3c-94fe-0131-cd69" type="selectionEntry" targetId="b750-3878-4b94-43da" import="true" />
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink name="Fearsome (Veteran Skill)" hidden="false" id="be47-63e1-9b57-e996" type="selectionEntry" targetId="e947-69a3-1823-29da" import="true" />
+            <entryLink name="Ferocious Fighter (Veteran Skill)" hidden="false" id="cba9-7dc5-f486-64d6" type="selectionEntry" targetId="db2a-d84d-6c69-adea" import="true" />
+            <entryLink name="Savage (Veteran Skill)" hidden="false" id="d9b8-a727-3aef-d53c" type="selectionEntry" targetId="bc73-0579-85c9-902d" import="true" />
+            <entryLink name="Tough (Veteran Skill)" hidden="false" id="19d9-3d35-ce51-88cc" type="selectionEntry" targetId="b420-48cb-5458-6fb7" import="true" />
+            <entryLink name="Strong (Elite Skill)" hidden="false" id="0239-8ae4-eb79-4ad9" type="selectionEntry" targetId="061c-0509-b6cd-16ec" import="true" />
+            <entryLink name="The One Who Knows (Elite Skill)" hidden="false" id="82c1-7292-6bed-77af" type="selectionEntry" targetId="5f86-e2a3-8a09-f2fd" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" name="Heroes" hidden="false" id="0955-4e89-1620-bf69" import="true">
+      <categoryLinks>
+        <categoryLink id="4d4c-5518-9800-559e" name="Heroes" hidden="false" targetId="cdf2-4f60-5c31-a783" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Heroes" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="34c7-6dd9-d3b6-aa47">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">5</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-2</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Max 1 Hero may be included per Formation of 5 Warriors or Marksmen in the warband (enforced: the Heroes limit grows by 1 for each Warriors or Marksmen Formation in the warband). Always fights and moves alone. Combat hand = 1 card per remaining Wound. Free bonus per Hero: 1 free Veteran Skill for any 1 Unit (or spend 1 more Honour to upgrade that free Skill to Elite) -- apply as a discount.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6c6b-4594-4a20-9ca2" name="No Ranged Weapons" hidden="false" targetId="2d34-6738-d8fc-3367" type="rule" />
+        <infoLink id="1031-d5c0-2921-9aa1" name="Stocky Build" hidden="false" targetId="d6de-2038-1e32-3066" type="rule" />
+        <infoLink id="2110-dec7-846f-2e2c" name="Resilient" hidden="false" targetId="7b81-b54d-c49f-9d2b" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="913c-7201-debd-9ac3" defaultSelectionEntryId="57d4-e27c-a2a2-b24a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb98-4bc5-185f-38c6" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eed0-b65d-5077-20bd" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Short Weapon" hidden="false" id="57d4-e27c-a2a2-b24a" type="selectionEntry" targetId="9e4b-f58f-0200-8054" import="true" />
+            <entryLink name="Long Weapon" hidden="false" id="d69e-35c5-2a63-abcc" type="selectionEntry" targetId="2689-04aa-91c4-9ef1" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills (choose up to 2)" hidden="false" id="f77e-9dd8-edf3-bef8">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="27b5-cd3b-23de-9413" />
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Mastery Skill (choose up to 1: Adept or Champion)" hidden="false" id="8716-45c0-56b6-4284">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aef4-4476-5e38-2ac3" />
+              </constraints>
+              <entryLinks>
+                <entryLink name="Adept [Skilled, short weapons only] (Veteran Skill)" hidden="false" id="d1c4-ad44-c1ae-e011" type="selectionEntry" targetId="07b2-2640-311b-0220" import="true" />
+                <entryLink name="Champion (Elite Skill)" hidden="false" id="cad2-88f7-eb0c-21dd" type="selectionEntry" targetId="b750-3878-4b94-43da" import="true" />
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink name="Fearsome (Veteran Skill)" hidden="false" id="78c0-1883-50d4-5d0b" type="selectionEntry" targetId="e947-69a3-1823-29da" import="true" />
+            <entryLink name="Ferocious Fighter (Veteran Skill)" hidden="false" id="d6bf-0973-4975-0e8c" type="selectionEntry" targetId="db2a-d84d-6c69-adea" import="true" />
+            <entryLink name="Savage (Veteran Skill)" hidden="false" id="6bd6-aa7f-a62d-1910" type="selectionEntry" targetId="bc73-0579-85c9-902d" import="true" />
+            <entryLink name="Tough (Veteran Skill)" hidden="false" id="efcd-d2eb-55fd-9091" type="selectionEntry" targetId="b420-48cb-5458-6fb7" import="true" />
+            <entryLink name="Strong (Elite Skill)" hidden="false" id="56f3-6ce0-c6bd-d1cc" type="selectionEntry" targetId="061c-0509-b6cd-16ec" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Warriors (Formation of 5)" hidden="false" id="31d4-1b4e-ab08-53ff" import="true">
+      <categoryLinks>
+        <categoryLink id="53b7-06af-b474-0299" name="Warriors (Formation of 5)" hidden="false" targetId="a20b-aa4e-9045-9c20" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Warriors (Formation of 5)" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="bdaa-14a6-8973-64a0">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">1</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-2</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Formation of 5 models, 1 Wound each, Skills apply to the whole Formation. Combat hand = 1 card per surviving model (1-5). All models in the Formation are armed with the same weapon type (a rule of thumb allows 1-2 oddly-armed models for looks only).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="335a-5c98-c4fa-7f70" name="No Ranged Weapons" hidden="false" targetId="2d34-6738-d8fc-3367" type="rule" />
+        <infoLink id="5961-7d34-bfd8-e78f" name="Stocky Build" hidden="false" targetId="d6de-2038-1e32-3066" type="rule" />
+        <infoLink id="e6e2-72b0-db0e-6e94" name="Resilient" hidden="false" targetId="7b81-b54d-c49f-9d2b" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="3f58-1491-9756-f516" defaultSelectionEntryId="8d42-bcd5-f4c0-b703">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="313f-5758-77f2-6984" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9c5-9529-e20d-2c71" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Short Weapon" hidden="false" id="8d42-bcd5-f4c0-b703" type="selectionEntry" targetId="9e4b-f58f-0200-8054" import="true" />
+            <entryLink name="Long Weapon" hidden="false" id="9538-e844-87e0-bc04" type="selectionEntry" targetId="2689-04aa-91c4-9ef1" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills (choose up to 2)" hidden="false" id="05b1-dc04-ea9d-2942">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="24d1-d539-cb10-df24" />
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Mastery Skill (choose up to 1: Adept)" hidden="false" id="039b-42ae-2567-9a70">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b07e-5145-094d-6dd1" />
+              </constraints>
+              <entryLinks>
+                <entryLink name="Adept [Skilled, short weapons only] (Veteran Skill)" hidden="false" id="e80d-2896-15b6-8e5f" type="selectionEntry" targetId="07b2-2640-311b-0220" import="true" />
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink name="Fearsome (Veteran Skill)" hidden="false" id="9ad6-f10e-4f84-28f6" type="selectionEntry" targetId="e947-69a3-1823-29da" import="true" />
+            <entryLink name="Savage (Veteran Skill)" hidden="false" id="7c97-8630-2f23-8ff7" type="selectionEntry" targetId="bc73-0579-85c9-902d" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="2d34-6738-d8fc-3367" name="No Ranged Weapons" hidden="false">
+      <description>Neanderthals had no bow or spear-thrower, so they may not include Archers and may not take the Throwing Weapons Skill.</description>
+    </rule>
+    <rule id="d6de-2038-1e32-3066" name="Stocky Build" hidden="false">
+      <description>When Sprinting, a Neanderthal unit may move only 1 long + 1 short card-edge at most. Pushing through Tough Going at a Sprint, it moves the normal distance of 2 short card-lengths.</description>
+    </rule>
+    <rule id="7b81-b54d-c49f-9d2b" name="Resilient" hidden="false">
+      <description>A Neanderthal unit begins to lose cards from its combat hand only after its second and later wounds.</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink name="Chief (Warlord)" hidden="false" id="81e5-9837-c91c-f13c" type="selectionEntry" targetId="7e0b-0548-b4b9-9291" import="true" />
+    <entryLink name="Heroes" hidden="false" id="59dd-d540-9843-7a35" type="selectionEntry" targetId="0955-4e89-1620-bf69" import="true" />
+    <entryLink name="Warriors (Formation of 5)" hidden="false" id="fb5d-df44-9a8c-ef60" type="selectionEntry" targetId="31d4-1b4e-ab08-53ff" import="true" />
+  </entryLinks>
+</catalogue>

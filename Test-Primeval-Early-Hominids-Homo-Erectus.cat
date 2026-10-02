@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="745e-154c-5a3a-5f75" name="Primeval - Early Hominids: Homo Erectus" gameSystemId="sys-e140-121e-9b34-0be3" gameSystemRevision="12" revision="12" battleScribeVersion="2.03" type="catalogue" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" name="Cunning (Veteran Skill)" hidden="false" id="3c10-ee69-c027-fa59" import="true">
+      <rules>
+        <rule id="2355-93e2-bea7-0d33" name="Cunning" hidden="false">
+          <description>This Unit adds +1 to its card value on any red (Hearts or Diamonds) Feint card played during an Exchange.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7555-0c2a-7c62-a70c" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Tactician (Veteran Skill)" hidden="false" id="e584-c72d-3099-0728" import="true">
+      <rules>
+        <rule id="8a19-6cd7-bd89-5699" name="Tactician" hidden="false">
+          <description>Warlord only. Immediately after the setup phase, the player may reposition 1 enemy Hero or Formation anywhere within the opponent's setup zone.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1121-9933-b6d5-a645" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Throwing Weapons (Veteran Skill)" hidden="false" id="245a-a142-263f-f89c" import="true">
+      <rules>
+        <rule id="8b97-022b-7c78-4ab8" name="Throwing Weapons" hidden="false">
+          <description>When this Unit Charges into close combat, flip a card: a black (Spade or Club) card causes 1 hit on the target before the Charge is resolved. Not increased by Strong.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="893e-e3f4-5940-06b9" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Fists, Feet and Teeth" hidden="false" id="8d7e-0f07-4044-25a3" import="true">
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Short Weapon" hidden="false" id="1641-6a9f-e707-8933" import="true">
+      <rules>
+        <rule id="8612-eaa6-71af-fa86" name="Short Weapon" hidden="false">
+          <description>Sword, axe, knife, club or similar. Gives the Preferred Weapon Bonus on Club Strike cards.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" name="Chief (Warlord)" hidden="false" id="0b24-4474-b3d8-2dec" import="true">
+      <categoryLinks>
+        <categoryLink id="cdc2-9879-d000-96af" name="Warlord" hidden="false" targetId="21fb-7998-9dc4-5fd0" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Chief (Warlord)" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="407a-1ef9-7821-13b5">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">6</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-3</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Always fights and moves alone; never joins Heroes or Formations. Combat hand = 1 card per remaining Wound. Free bonus: 1 free Elite Skill for any 1 Unit in the warband (including itself), OR 1 free Veteran Skill for each of 2 Units -- apply this as a discount when you spend Honour on Skills.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1a56-018a-f70d-b200" name="No Ranged Weapons" hidden="false" targetId="4d66-2e1d-3ddd-5393" type="rule" />
+        <infoLink id="c129-2a1f-8b49-cbd8" name="Early Weapons" hidden="false" targetId="b6ab-fba8-a6c7-a402" type="rule" />
+        <infoLink id="3175-7a70-f85c-cad5" name="Dominance!" hidden="false" targetId="73ab-8071-a518-f201" type="rule" />
+        <infoLink id="3dfd-6d1f-dade-0767" name="Homo Erectus" hidden="false" targetId="c718-e360-b1ab-a061" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="5657-1d37-2738-792c" defaultSelectionEntryId="bf6d-2e0c-1fac-0e40">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="906c-3bb9-21e9-8011" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e064-1f33-9854-cf72" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Fists, Feet and Teeth" hidden="false" id="bf6d-2e0c-1fac-0e40" type="selectionEntry" targetId="8d7e-0f07-4044-25a3" import="true" />
+            <entryLink name="Short Weapon" hidden="false" id="e990-4758-87ac-57d7" type="selectionEntry" targetId="1641-6a9f-e707-8933" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills (choose up to 3)" hidden="false" id="1718-b37c-6968-890a">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="458c-4ae7-7e22-32a3" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cunning (Veteran Skill)" hidden="false" id="36a9-d44c-d476-bac0" type="selectionEntry" targetId="3c10-ee69-c027-fa59" import="true" />
+            <entryLink name="Tactician (Veteran Skill)" hidden="false" id="f979-62f6-72b8-2338" type="selectionEntry" targetId="e584-c72d-3099-0728" import="true" />
+            <entryLink name="Throwing Weapons (Veteran Skill)" hidden="false" id="16a7-6ba7-4413-5fa5" type="selectionEntry" targetId="245a-a142-263f-f89c" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" name="Heroes" hidden="false" id="a991-6bb4-5e9f-ea73" import="true">
+      <categoryLinks>
+        <categoryLink id="d3ca-0889-9563-200d" name="Heroes" hidden="false" targetId="cdf2-4f60-5c31-a783" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Heroes" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="94ea-284c-70c4-cc80">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">5</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-2</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Max 1 Hero may be included per Formation of 5 Warriors or Marksmen in the warband (enforced: the Heroes limit grows by 1 for each Warriors or Marksmen Formation in the warband). Always fights and moves alone. Combat hand = 1 card per remaining Wound. Free bonus per Hero: 1 free Veteran Skill for any 1 Unit (or spend 1 more Honour to upgrade that free Skill to Elite) -- apply as a discount.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1d96-e291-87ce-9b47" name="No Ranged Weapons" hidden="false" targetId="4d66-2e1d-3ddd-5393" type="rule" />
+        <infoLink id="6e08-0f2b-9b46-5aaf" name="Early Weapons" hidden="false" targetId="b6ab-fba8-a6c7-a402" type="rule" />
+        <infoLink id="e0d9-30e4-6f61-68ba" name="Dominance!" hidden="false" targetId="73ab-8071-a518-f201" type="rule" />
+        <infoLink id="84e7-0f89-ac92-3360" name="Homo Erectus" hidden="false" targetId="c718-e360-b1ab-a061" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="7907-c734-3f8c-ccc3" defaultSelectionEntryId="bb9c-3de3-911f-c8e6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e36e-eed1-1685-6b2d" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5666-17d4-e3bc-9e29" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Fists, Feet and Teeth" hidden="false" id="bb9c-3de3-911f-c8e6" type="selectionEntry" targetId="8d7e-0f07-4044-25a3" import="true" />
+            <entryLink name="Short Weapon" hidden="false" id="7b74-21f5-e00a-adf8" type="selectionEntry" targetId="1641-6a9f-e707-8933" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills (choose up to 2)" hidden="false" id="db65-5c52-14b0-62cf">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf7a-b970-0f9b-3d5b" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cunning (Veteran Skill)" hidden="false" id="94a6-a993-777b-1f3a" type="selectionEntry" targetId="3c10-ee69-c027-fa59" import="true" />
+            <entryLink name="Throwing Weapons (Veteran Skill)" hidden="false" id="1567-c661-0627-8ef9" type="selectionEntry" targetId="245a-a142-263f-f89c" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" name="Warriors (Formation of 5)" hidden="false" id="8f29-a0b6-513f-fcec" import="true">
+      <categoryLinks>
+        <categoryLink id="283b-7e6c-572e-8e6f" name="Warriors (Formation of 5)" hidden="false" targetId="a20b-aa4e-9045-9c20" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Warriors (Formation of 5)" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="9685-5443-5228-ccbb">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">1</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-2</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Formation of 5 models, 1 Wound each, Skills apply to the whole Formation. Combat hand = 1 card per surviving model (1-5). All models in the Formation are armed with the same weapon type (a rule of thumb allows 1-2 oddly-armed models for looks only).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="270b-04c2-e470-14bf" name="No Ranged Weapons" hidden="false" targetId="4d66-2e1d-3ddd-5393" type="rule" />
+        <infoLink id="4038-9fe2-4f4c-ba87" name="Early Weapons" hidden="false" targetId="b6ab-fba8-a6c7-a402" type="rule" />
+        <infoLink id="2433-a5b6-9701-e24c" name="Dominance!" hidden="false" targetId="73ab-8071-a518-f201" type="rule" />
+        <infoLink id="6024-fefd-5e21-5cd8" name="Homo Erectus" hidden="false" targetId="c718-e360-b1ab-a061" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="27bc-a3ed-b17c-dc04" defaultSelectionEntryId="ec97-5425-b7fd-7420">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d499-2643-d2d0-39a7" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcc9-e71a-6ef9-0e56" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Fists, Feet and Teeth" hidden="false" id="ec97-5425-b7fd-7420" type="selectionEntry" targetId="8d7e-0f07-4044-25a3" import="true" />
+            <entryLink name="Short Weapon" hidden="false" id="6042-62bb-613e-80ba" type="selectionEntry" targetId="1641-6a9f-e707-8933" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="4d66-2e1d-3ddd-5393" name="No Ranged Weapons" hidden="false">
+      <description>Early Hominids had no ranged warfare, so they may not include Archers.</description>
+    </rule>
+    <rule id="b6ab-fba8-a6c7-a402" name="Early Weapons" hidden="false">
+      <description>Early Hominids fight with fists, feet and teeth. Clubs (simple hand-held tools) work as in the normal rules. Natural weapons (the Spade suit) have no reach bonus and do not win drawn Exchanges against short weapons; if an unarmed attacker triples the foe's score, the Dominance! rule applies instead of Overpower.</description>
+    </rule>
+    <rule id="73ab-8071-a518-f201" name="Dominance!" hidden="false">
+      <description>When an attack Overpowers with fists, feet and teeth, no extra wounds are caused. Instead the winner of the Exchange receives 1 Honour Point from the loser. Not used when playing against later tribes.</description>
+    </rule>
+    <rule id="c718-e360-b1ab-a061" name="Homo Erectus" hidden="false">
+      <description>Any unit may carry short weapons such as clubs instead of fists, feet and teeth. Only Characters may buy Skills.</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink name="Chief (Warlord)" hidden="false" id="f61e-50f0-afde-06e3" type="selectionEntry" targetId="0b24-4474-b3d8-2dec" import="true" />
+    <entryLink name="Heroes" hidden="false" id="4718-fd1d-b52d-522a" type="selectionEntry" targetId="a991-6bb4-5e9f-ea73" import="true" />
+    <entryLink name="Warriors (Formation of 5)" hidden="false" id="3958-4d6c-753e-856e" type="selectionEntry" targetId="8f29-a0b6-513f-fcec" import="true" />
+  </entryLinks>
+</catalogue>
