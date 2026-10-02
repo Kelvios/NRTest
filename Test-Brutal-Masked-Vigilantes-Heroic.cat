@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d666-84a2-251d-5e6f" name="Brutal - Masked Vigilantes: Heroic" gameSystemId="sys-e140-121e-9b34-0be3" gameSystemRevision="13" revision="13" battleScribeVersion="2.03" type="catalogue" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
+  <forceEntries>
+    <forceEntry id="8998-19f4-d4fc-d3bc" name="Heroic Vigilantes" hidden="false">
+      <categoryLinks>
+        <categoryLink id="2c27-86aa-f744-5e26" name="Warlord" hidden="false" targetId="21fb-7998-9dc4-5fd0" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c96a-f5e0-d854-b3a3" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba14-669a-7a71-4837" />
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f730-484b-bbef-fb9c" name="Heroes" hidden="false" targetId="cdf2-4f60-5c31-a783" type="category">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="831e-c635-0bd1-eea2" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" name="Adept (Veteran Skill)" hidden="false" id="ab70-ef55-ae23-91b1" import="true">
+      <rules>
+        <rule id="d47b-e7b5-5f28-aae7" name="Adept" hidden="false">
+          <description>After long training with their weapon of choice, this Unit has a Preferred Weapon Bonus of +2 instead of the normal +1. Cannot be combined with Champion or Duellist.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d8d-c983-ddd1-6fc8" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Agile (Veteran Skill)" hidden="false" id="5f5f-adca-a58c-d642" import="true">
+      <rules>
+        <rule id="fca0-8596-66fc-c97e" name="Agile" hidden="false">
+          <description>The Unit always begins a combat round with Advantage, even if Charged. If both Units engaged in combat have this Skill, the Unit that made the Charge starts with Advantage as normal.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad85-de49-0866-33bb" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Cunning (Veteran Skill)" hidden="false" id="a19d-dc85-f5f2-24df" import="true">
+      <rules>
+        <rule id="da45-33dd-18ab-b066" name="Cunning" hidden="false">
+          <description>This Unit adds +1 to its card value on any red (Hearts or Diamonds) Feint card played during an Exchange.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bf7-c9dc-24ae-8de1" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Deadly Shot (Veteran Skill)" hidden="false" id="bcfe-4500-35aa-93ec" import="true">
+      <rules>
+        <rule id="7b37-fad8-8bfd-08c5" name="Deadly Shot" hidden="false">
+          <description>This Unit adds +2 to its card value when making ranged attacks. Normally only useful for Marksmen, or Characters with the Long Shot Skill.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2f4-0975-5356-1e60" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Duellist (Veteran Skill)" hidden="false" id="ffa3-190f-6a88-1e18" import="true">
+      <rules>
+        <rule id="4457-35ae-8dd6-d03a" name="Duellist" hidden="false">
+          <description>Characters only. Gains the Preferred Weapon Bonus from both Spade and Club Strike cards. Cannot be combined with Adept or Champion.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb8b-ba18-6d19-20f6" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Fearsome (Veteran Skill)" hidden="false" id="3673-55e7-94d9-533a" import="true">
+      <rules>
+        <rule id="3750-1cdf-c015-3262" name="Fearsome" hidden="false">
+          <description>This Unit causes +1 hit with Spade or Club Strike cards when it wins an Exchange against a Formation.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55ac-3505-b406-7ba7" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Hard Target (Veteran Skill)" hidden="false" id="7171-1cc1-a859-ea07" import="true">
+      <rules>
+        <rule id="af0e-f55c-f178-14f5" name="Hard Target" hidden="false">
+          <description>Marksmen firing at this Unit suffer -2 to their attack card value.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eb3-9a5e-50e4-5392" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Long Shot (Veteran Skill)" hidden="false" id="0a3b-2f98-c7ab-d95d" import="true">
+      <rules>
+        <rule id="d91d-e945-891f-5cad" name="Long Shot" hidden="false">
+          <description>Characters only. This Character may use its Activation Card to make a ranged attack, resolved as a ranged attack from a Unit of Marksmen. Unlike Marksmen, if the target Unit is destroyed this way the player DOES receive Blood Payment.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7f7-8aeb-8b82-dbed" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Ranger (Veteran Skill)" hidden="false" id="cc57-071e-7004-ec26" import="true">
+      <rules>
+        <rule id="015d-b703-2c6d-59c0" name="Ranger" hidden="false">
+          <description>This Unit is not slowed to a Walk when moving through Tough Going, and may Walk (1 short card-edge) across Impassable terrain if it can clear it in a single activation. Cannot be used by Cavalry.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79fa-0622-1439-7cfd" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Savage (Veteran Skill)" hidden="false" id="def0-3dd6-c83c-926d" import="true">
+      <rules>
+        <rule id="11fb-576f-8ad9-b6d1" name="Savage" hidden="false">
+          <description>This Unit causes +1 hit with Spade or Club Strike cards when it wins an Exchange against a Character.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bec6-bdc6-f5d0-5351" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Survival Instinct (Veteran Skill)" hidden="false" id="842e-e2b8-e458-1e4d" import="true">
+      <rules>
+        <rule id="8c9b-dc99-2342-4349" name="Survival Instinct" hidden="false">
+          <description>Characters only. When a fight is going badly the hero may try to break away: the next successful Exchange does no damage; instead the Character and the enemy each discard the Character's remaining combat hand cards (the enemy's drawn at random if larger), each counting as a completed Exchange. (Brutal version; replaces the core Survival Instinct.)</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="036e-5ecb-ae59-06c4" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Tactician (Veteran Skill)" hidden="false" id="4142-4b32-ad71-a0e9" import="true">
+      <rules>
+        <rule id="e65e-d524-6620-8814" name="Tactician" hidden="false">
+          <description>Warlord only. Immediately after the setup phase, the player may reposition 1 enemy Hero or Formation anywhere within the opponent's setup zone.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1213-624a-d3e5-7c57" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Throwing Weapons (Veteran Skill)" hidden="false" id="b9d5-d233-9b8a-b9ef" import="true">
+      <rules>
+        <rule id="fa70-82df-cf03-38a8" name="Throwing Weapons" hidden="false">
+          <description>When this Unit Charges into close combat, flip a card: a black (Spade or Club) card causes 1 hit on the target before the Charge is resolved. Not increased by Strong.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5763-d314-edef-b9b5" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Tough (Veteran Skill)" hidden="false" id="75ff-2e68-badc-2a3e" import="true">
+      <rules>
+        <rule id="2596-0806-3321-d7d0" name="Tough" hidden="false">
+          <description>Characters only. This Character begins the game with +1 Wound. This extra Wound does not increase its combat hand size.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d34-7876-962a-8e82" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Respected (Veteran Skill)" hidden="false" id="7382-b8ad-1839-9933" import="true">
+      <rules>
+        <rule id="1d18-b28d-4710-571d" name="Respected" hidden="false">
+          <description>Warlord only. Card Pools optional rule only. At the start of the game, this Warlord's player draws 1 additional Card Pool card (6 total). Not lost if the Warlord is slain. Cannot be combined with Revered.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed7-8f11-dab2-0c14" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Berserker (Elite Skill)" hidden="false" id="6b15-86bc-60f1-8dff" import="true">
+      <rules>
+        <rule id="9693-d025-c6b6-3676" name="Berserker" hidden="false">
+          <description>Characters only. This Character always draws its combat hand as if completely unwounded. It suffers -2 to the value of any red (Hearts or Diamonds) Feint card it plays.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d09-2f26-a849-b758" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Champion (Elite Skill)" hidden="false" id="0bcf-f8d5-ce27-230d" import="true">
+      <rules>
+        <rule id="e828-f9a9-ccaf-eb51" name="Champion" hidden="false">
+          <description>Characters only. Preferred Weapon Bonus of +2 (instead of +1), plus a further +1 Preferred Weapon Bonus with the other Strike suit. Cannot be combined with Adept or Duellist.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a24c-647d-e8fe-4793" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Concealment (Elite Skill)" hidden="false" id="8d16-8a8e-efe9-f592" import="true">
+      <rules>
+        <rule id="4483-2ebb-7c5a-3da2" name="Concealment" hidden="false">
+          <description>Warlord only. During deployment, this player's Units are represented by red (Hearts/Diamonds) cards placed face down: number cards for Formations, face cards for Characters, plus an equal number of black decoy cards. All are revealed and Units placed before the first turn.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9117-40a7-b31d-810e" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Seasoned (Elite Skill)" hidden="false" id="2e1c-1de0-70e1-32c0" import="true">
+      <rules>
+        <rule id="aa90-1ce5-e246-39bf" name="Seasoned" hidden="false">
+          <description>This Unit may discard and redraw 2 cards from its combat hand before the first Exchange of a combat.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0057-9302-d66f-5d2d" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Strong (Elite Skill)" hidden="false" id="65f5-5a35-12ea-6401" import="true">
+      <rules>
+        <rule id="413f-e017-6f2c-5f43" name="Strong" hidden="false">
+          <description>Characters only. This Character causes +1 hit when it wins a hand-to-hand Exchange with a Spade or Club Strike card.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9769-9f60-0a7a-c10a" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Revered (Elite Skill)" hidden="false" id="2351-e367-8be3-81fc" import="true">
+      <rules>
+        <rule id="3798-c280-1a2c-2a2e" name="Revered" hidden="false">
+          <description>Warlord only. Card Pools optional rule only. At the start of the game, this Warlord's player draws 2 additional Card Pool cards (7 total). Not lost if the Warlord is slain. Cannot be combined with Respected.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83e3-e9e7-8deb-8455" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="2" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Body Armour (Veteran Skill)" hidden="false" id="c845-9e8e-ee1e-5f6c" import="true">
+      <rules>
+        <rule id="4453-fa43-c609-f3a5" name="Body Armour" hidden="false">
+          <description>Characters only. When a model wearing body armour takes a hit, draw a card: a Jack (11) or more cancels the hit. Against an Overpower or Mighty Blow only one of the two wounds can be cancelled.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e26b-6626-5a9c-c5af" />
+      </constraints>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Unarmed" hidden="false" id="3b49-cba2-5db3-ae2f" import="true">
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" name="Short Weapon" hidden="false" id="7891-7dd4-1775-40a7" import="true">
+      <rules>
+        <rule id="aaae-645f-fc22-6e66" name="Short Weapon" hidden="false">
+          <description>Sword, axe, knife, club or similar. Gives the Preferred Weapon Bonus on Club Strike cards.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" name="Chief" hidden="false" id="4cdc-02b0-dfb3-45af" import="true">
+      <categoryLinks>
+        <categoryLink id="138d-2efe-d796-9387" name="Warlord" hidden="false" targetId="21fb-7998-9dc4-5fd0" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Chief" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="334b-3625-53a4-46dd">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">6</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-3</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Always fights and moves alone; never joins Heroes or Formations. Combat hand = 1 card per remaining Wound. Free bonus: 1 free Elite Skill for any 1 Unit in the warband (including itself), OR 1 free Veteran Skill for each of 2 Units -- apply this as a discount when you spend Honour on Skills.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="00b3-b063-79f6-244a" name="Street Weapons" hidden="false" targetId="b353-b8c7-4708-2608" type="rule" />
+        <infoLink id="e42a-f357-84ad-935d" name="Beat Down!" hidden="false" targetId="eaa6-430a-178a-2005" type="rule" />
+        <infoLink id="2dd2-9240-8f9e-b42b" name="No Missile Weapons" hidden="false" targetId="4d87-3312-125c-9e1a" type="rule" />
+        <infoLink id="3093-4d94-b0ea-3313" name="Toughs" hidden="false" targetId="58ab-11ad-7a31-0c86" type="rule" />
+        <infoLink id="917d-b8fd-eba5-0163" name="Mighty Blow" hidden="false" targetId="8f47-4b2c-30d1-f5eb" type="rule" />
+        <infoLink id="534a-6c7a-487b-c2a7" name="Firearms and Super Powers" hidden="false" targetId="7da9-790e-a773-184c" type="rule" />
+        <infoLink id="164d-a73c-b5b9-f868" name="Lone Vigilante" hidden="false" targetId="ddf4-9097-7c0a-dfbd" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="d62d-4f35-1739-35e3" defaultSelectionEntryId="8c0f-f38e-cecb-28ce">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e61-375e-0835-cd3e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f701-6119-a275-a5e1" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Unarmed" hidden="false" id="240a-0e73-6e02-af1a" type="selectionEntry" targetId="3b49-cba2-5db3-ae2f" import="true" />
+            <entryLink name="Short Weapon" hidden="false" id="8c0f-f38e-cecb-28ce" type="selectionEntry" targetId="7891-7dd4-1775-40a7" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills (choose up to 3)" hidden="false" id="967e-0102-d459-912d">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4dbc-8160-7882-0390" />
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Mastery Skill (choose up to 1: Adept, Duellist or Champion)" hidden="false" id="b0a5-d50a-d75c-48b9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6536-b4d6-3474-f071" />
+              </constraints>
+              <entryLinks>
+                <entryLink name="Adept (Veteran Skill)" hidden="false" id="0b27-6a6c-5560-e642" type="selectionEntry" targetId="ab70-ef55-ae23-91b1" import="true" />
+                <entryLink name="Duellist (Veteran Skill)" hidden="false" id="0b2c-8778-8af0-ba67" type="selectionEntry" targetId="ffa3-190f-6a88-1e18" import="true" />
+                <entryLink name="Champion (Elite Skill)" hidden="false" id="aa7e-599a-4fdb-6638" type="selectionEntry" targetId="0bcf-f8d5-ce27-230d" import="true" />
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Card Pool Bonus Skill (choose up to 1: Respected or Revered; Card Pools option only)" hidden="false" id="4088-f92a-bc6c-fb6a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eef0-633d-fba5-310b" />
+              </constraints>
+              <entryLinks>
+                <entryLink name="Respected (Veteran Skill)" hidden="false" id="d4a4-aae9-02ee-97e6" type="selectionEntry" targetId="7382-b8ad-1839-9933" import="true" />
+                <entryLink name="Revered (Elite Skill)" hidden="false" id="68cf-d5f4-d686-78f8" type="selectionEntry" targetId="2351-e367-8be3-81fc" import="true" />
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink name="Agile (Veteran Skill)" hidden="false" id="9765-7f5c-9a4c-d64f" type="selectionEntry" targetId="5f5f-adca-a58c-d642" import="true" />
+            <entryLink name="Cunning (Veteran Skill)" hidden="false" id="b2a7-a0a0-e529-0fbc" type="selectionEntry" targetId="a19d-dc85-f5f2-24df" import="true" />
+            <entryLink name="Deadly Shot (Veteran Skill)" hidden="false" id="dc9f-210f-1f59-001d" type="selectionEntry" targetId="bcfe-4500-35aa-93ec" import="true" />
+            <entryLink name="Fearsome (Veteran Skill)" hidden="false" id="9c0b-02a1-e7c3-b743" type="selectionEntry" targetId="3673-55e7-94d9-533a" import="true" />
+            <entryLink name="Hard Target (Veteran Skill)" hidden="false" id="c8ec-a541-2102-b582" type="selectionEntry" targetId="7171-1cc1-a859-ea07" import="true" />
+            <entryLink name="Long Shot (Veteran Skill)" hidden="false" id="563d-b50e-3760-d99d" type="selectionEntry" targetId="0a3b-2f98-c7ab-d95d" import="true" />
+            <entryLink name="Ranger (Veteran Skill)" hidden="false" id="9ba9-8bba-0a8e-9c08" type="selectionEntry" targetId="cc57-071e-7004-ec26" import="true" />
+            <entryLink name="Savage (Veteran Skill)" hidden="false" id="c4a3-85dd-256e-2d38" type="selectionEntry" targetId="def0-3dd6-c83c-926d" import="true" />
+            <entryLink name="Survival Instinct (Veteran Skill)" hidden="false" id="dc02-fca0-48ca-2a74" type="selectionEntry" targetId="842e-e2b8-e458-1e4d" import="true" />
+            <entryLink name="Tactician (Veteran Skill)" hidden="false" id="0e6c-f8e4-5aea-041b" type="selectionEntry" targetId="4142-4b32-ad71-a0e9" import="true" />
+            <entryLink name="Throwing Weapons (Veteran Skill)" hidden="false" id="f5a6-b694-7da3-7dfd" type="selectionEntry" targetId="b9d5-d233-9b8a-b9ef" import="true" />
+            <entryLink name="Tough (Veteran Skill)" hidden="false" id="f23a-cb66-0a09-719f" type="selectionEntry" targetId="75ff-2e68-badc-2a3e" import="true" />
+            <entryLink name="Berserker (Elite Skill)" hidden="false" id="6a4d-bb2c-fd7a-025f" type="selectionEntry" targetId="6b15-86bc-60f1-8dff" import="true" />
+            <entryLink name="Concealment (Elite Skill)" hidden="false" id="accd-ba15-8cae-ab28" type="selectionEntry" targetId="8d16-8a8e-efe9-f592" import="true" />
+            <entryLink name="Seasoned (Elite Skill)" hidden="false" id="b77c-f5d5-e744-7e7a" type="selectionEntry" targetId="2e1c-1de0-70e1-32c0" import="true" />
+            <entryLink name="Strong (Elite Skill)" hidden="false" id="9d1b-271e-6691-bb0e" type="selectionEntry" targetId="65f5-5a35-12ea-6401" import="true" />
+            <entryLink name="Body Armour (Veteran Skill)" hidden="false" id="0af7-1da6-0e48-f0f2" type="selectionEntry" targetId="c845-9e8e-ee1e-5f6c" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" name="Heroes" hidden="false" id="61f2-41a7-cbdc-1223" import="true">
+      <categoryLinks>
+        <categoryLink id="fbd4-e667-d219-63b3" name="Heroes" hidden="false" targetId="cdf2-4f60-5c31-a783" primary="true" />
+      </categoryLinks>
+      <profiles>
+        <profile name="Heroes" hidden="false" typeId="49d0-84ee-492f-492f" typeName="Unit" id="ac1a-7593-a276-4194">
+          <characteristics>
+            <characteristic name="Wounds" typeId="aea1-39b1-ec9b-475a">5</characteristic>
+            <characteristic name="Skills" typeId="1200-2470-7a16-e426">0-2</characteristic>
+            <characteristic name="Notes" typeId="fb14-0b46-30b6-76a9">Max 1 Hero may be included per Formation of 5 Warriors or Marksmen in the warband (enforced: the Heroes limit grows by 1 for each Warriors or Marksmen Formation in the warband). Always fights and moves alone. Combat hand = 1 card per remaining Wound. Free bonus per Hero: 1 free Veteran Skill for any 1 Unit (or spend 1 more Honour to upgrade that free Skill to Elite) -- apply as a discount.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="46bb-c296-efdd-0f8f" name="Street Weapons" hidden="false" targetId="b353-b8c7-4708-2608" type="rule" />
+        <infoLink id="4e3f-5c15-0163-5bcc" name="Beat Down!" hidden="false" targetId="eaa6-430a-178a-2005" type="rule" />
+        <infoLink id="2ef9-d802-94bd-64cf" name="No Missile Weapons" hidden="false" targetId="4d87-3312-125c-9e1a" type="rule" />
+        <infoLink id="0037-b32c-c53c-ad5b" name="Toughs" hidden="false" targetId="58ab-11ad-7a31-0c86" type="rule" />
+        <infoLink id="9975-1fa9-cd74-3eb0" name="Mighty Blow" hidden="false" targetId="8f47-4b2c-30d1-f5eb" type="rule" />
+        <infoLink id="74a7-eddc-2e60-f688" name="Firearms and Super Powers" hidden="false" targetId="7da9-790e-a773-184c" type="rule" />
+        <infoLink id="b2e5-5e24-6bd7-4090" name="Lone Vigilante" hidden="false" targetId="ddf4-9097-7c0a-dfbd" type="rule" />
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon (choose 1)" hidden="false" id="55cc-2bd3-a6ac-b7b5" defaultSelectionEntryId="2983-26bc-7912-e570">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ebe-cd40-8b6b-2ca2" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7be-afac-e638-4e14" />
+          </constraints>
+          <entryLinks>
+            <entryLink name="Unarmed" hidden="false" id="95b1-b353-eefe-0a4f" type="selectionEntry" targetId="3b49-cba2-5db3-ae2f" import="true" />
+            <entryLink name="Short Weapon" hidden="false" id="2983-26bc-7912-e570" type="selectionEntry" targetId="7891-7dd4-1775-40a7" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skills (choose up to 2)" hidden="false" id="c3b4-5c0a-ad4d-7d5c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e6c0-7485-f8af-d0a6" />
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Mastery Skill (choose up to 1: Adept, Duellist or Champion)" hidden="false" id="d671-6ebb-c7ee-ed04">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63c9-ef7b-b0d2-95f5" />
+              </constraints>
+              <entryLinks>
+                <entryLink name="Adept (Veteran Skill)" hidden="false" id="c7bf-fe30-e227-db42" type="selectionEntry" targetId="ab70-ef55-ae23-91b1" import="true" />
+                <entryLink name="Duellist (Veteran Skill)" hidden="false" id="1cb3-03de-a396-2afc" type="selectionEntry" targetId="ffa3-190f-6a88-1e18" import="true" />
+                <entryLink name="Champion (Elite Skill)" hidden="false" id="8de6-e40e-87ed-544b" type="selectionEntry" targetId="0bcf-f8d5-ce27-230d" import="true" />
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink name="Agile (Veteran Skill)" hidden="false" id="88b2-bf5f-c574-88f2" type="selectionEntry" targetId="5f5f-adca-a58c-d642" import="true" />
+            <entryLink name="Cunning (Veteran Skill)" hidden="false" id="7b78-b24c-4092-6ece" type="selectionEntry" targetId="a19d-dc85-f5f2-24df" import="true" />
+            <entryLink name="Deadly Shot (Veteran Skill)" hidden="false" id="c2e9-24a3-513b-8376" type="selectionEntry" targetId="bcfe-4500-35aa-93ec" import="true" />
+            <entryLink name="Fearsome (Veteran Skill)" hidden="false" id="ba14-b164-0f6a-1223" type="selectionEntry" targetId="3673-55e7-94d9-533a" import="true" />
+            <entryLink name="Hard Target (Veteran Skill)" hidden="false" id="a4f1-25f6-058f-174c" type="selectionEntry" targetId="7171-1cc1-a859-ea07" import="true" />
+            <entryLink name="Long Shot (Veteran Skill)" hidden="false" id="d23f-5434-c2f0-879a" type="selectionEntry" targetId="0a3b-2f98-c7ab-d95d" import="true" />
+            <entryLink name="Ranger (Veteran Skill)" hidden="false" id="3631-71f8-d696-96f8" type="selectionEntry" targetId="cc57-071e-7004-ec26" import="true" />
+            <entryLink name="Savage (Veteran Skill)" hidden="false" id="f19b-d22f-e91c-4c20" type="selectionEntry" targetId="def0-3dd6-c83c-926d" import="true" />
+            <entryLink name="Survival Instinct (Veteran Skill)" hidden="false" id="bc05-9302-43a4-37a2" type="selectionEntry" targetId="842e-e2b8-e458-1e4d" import="true" />
+            <entryLink name="Throwing Weapons (Veteran Skill)" hidden="false" id="7ab8-c3c7-4e4d-7600" type="selectionEntry" targetId="b9d5-d233-9b8a-b9ef" import="true" />
+            <entryLink name="Tough (Veteran Skill)" hidden="false" id="f36f-a1fa-99af-1b65" type="selectionEntry" targetId="75ff-2e68-badc-2a3e" import="true" />
+            <entryLink name="Berserker (Elite Skill)" hidden="false" id="cbe4-4c9d-8a50-a592" type="selectionEntry" targetId="6b15-86bc-60f1-8dff" import="true" />
+            <entryLink name="Seasoned (Elite Skill)" hidden="false" id="cfcf-3790-fdc4-b246" type="selectionEntry" targetId="2e1c-1de0-70e1-32c0" import="true" />
+            <entryLink name="Strong (Elite Skill)" hidden="false" id="9e75-a91f-15b6-31d5" type="selectionEntry" targetId="65f5-5a35-12ea-6401" import="true" />
+            <entryLink name="Body Armour (Veteran Skill)" hidden="false" id="4e1c-e9c4-ef13-333c" type="selectionEntry" targetId="c845-9e8e-ee1e-5f6c" import="true" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Honour" typeId="2583-462d-9a3d-8b99" value="1" />
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="b353-b8c7-4708-2608" name="Street Weapons" hidden="false">
+      <description>Brutal gangs fight with fists and feet or easily concealed weapons. Clubs are short weapons (daggers, bludgeons, tyre irons; any long weapon counts as short). Spades are unarmed (fists, feet, brass knuckles, broken bottles); having little reach, unarmed attacks do not win drawn Exchanges against short weapons. Instead, when an unarmed attack triples the opponent's score it uses the Beat Down! rule rather than Overpower.</description>
+    </rule>
+    <rule id="eaa6-430a-178a-2005" name="Beat Down!" hidden="false">
+      <description>When an attacker uses a Beat Down instead of Overpower, no additional wounds are caused. Instead the winner of the Exchange immediately receives 1 Honour Point from the loser.</description>
+    </rule>
+    <rule id="4d87-3312-125c-9e1a" name="No Missile Weapons" hidden="false">
+      <description>Brutal warbands may not include units of Missile Troops. Units may still buy Throwing Weapons. (Not true of Wasteland Warriors.)</description>
+    </rule>
+    <rule id="58ab-11ad-7a31-0c86" name="Toughs" hidden="false">
+      <description>Toughs are the TRIBAL Warriors under another name: they share all the usual rules, costs and Skills.</description>
+    </rule>
+    <rule id="8f47-4b2c-30d1-f5eb" name="Mighty Blow" hidden="false">
+      <description>Characters only. When an unarmed Character triples the opponent's score, it makes a Mighty Blow instead of an Overpower: the wounds inflicted are doubled and the winner takes 1 Honour from the loser.</description>
+    </rule>
+    <rule id="7da9-790e-a773-184c" name="Firearms and Super Powers" hidden="false">
+      <description>A firearm may be played as a stun weapon or as a super power. Skills such as Strong or Agile can represent low-level super abilities.</description>
+    </rule>
+    <rule id="ddf4-9097-7c0a-dfbd" name="Lone Vigilante" hidden="false">
+      <description>A heroic warband may be the Chief alone (a Lone Vigilante), who relies on Justice Sustains Me! to survive. Justice Sustains Me!: a Lone Vigilante may set unspent Honour aside as a Restoration Pool and spend 1 to 3 Honour in place of an activation to restore wounds (draw a card per Honour: 2 to 10 restores 1 wound, Jack to Ace restores 2, a Joker restores all).</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink name="Chief" hidden="false" id="6e8f-91ea-183d-5390" type="selectionEntry" targetId="4cdc-02b0-dfb3-45af" import="true" />
+    <entryLink name="Heroes" hidden="false" id="79ec-9360-dc6b-776a" type="selectionEntry" targetId="61f2-41a7-cbdc-1223" import="true" />
+  </entryLinks>
+</catalogue>

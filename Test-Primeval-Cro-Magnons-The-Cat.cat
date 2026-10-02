@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="9e9a-e77c-1122-3ab6" name="Primeval - Cro-Magnons: The Cat" gameSystemId="sys-e140-121e-9b34-0be3" gameSystemRevision="12" revision="12" battleScribeVersion="2.03" type="catalogue" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="9e9a-e77c-1122-3ab6" name="Primeval - Cro-Magnons: The Cat" gameSystemId="sys-e140-121e-9b34-0be3" gameSystemRevision="13" revision="13" battleScribeVersion="2.03" type="catalogue" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" name="Agile (Veteran Skill)" hidden="false" id="4d06-27b4-7516-8e77" import="true">
       <rules>

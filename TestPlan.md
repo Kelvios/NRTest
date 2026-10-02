@@ -1,8 +1,8 @@
-# Test plan: TRIBAL Primeval tribes, plus the Shaman as a Character (P1 to P11, SH1 to SH7)
+# Test plan: TRIBAL Primeval, Brutal and the Shaman as a Character (P1-P11, BR1-BR9, SH1-SH7, R1)
 
-Data revision under test: Tribal2E revision 5 (published here as the shared test revision 12). Source spec: `Kelvios/Boot-Camp`, `systems/Tribal2E/spec.yaml`.
+Data revision under test: Tribal2E revision 5 (published here as the shared test revision 13). Source spec: `Kelvios/Boot-Camp`, `systems/Tribal2E/spec.yaml`.
 
-This adds eight Primeval armies to the TRIBAL game system, one catalogue each: Neanderthals; Cro-Magnons (The Wolf, The Cat, The Bear); Denisovans; and Early Hominids (Homo Habilis, Homo Rudolfensis, Homo Erectus). It also carries the Shaman-as-a-Character change from the previous test (SH1 to SH7), which has not been signed off yet.
+This adds eight Primeval armies and seven Brutal armies to the TRIBAL game system, one catalogue each. The Primeval armies are: Neanderthals; Cro-Magnons (The Wolf, The Cat, The Bear); Denisovans; and Early Hominids (Homo Habilis, Homo Rudolfensis, Homo Erectus). It also carries the Shaman-as-a-Character change from the previous test (SH1 to SH7), which has not been signed off yet.
 
 The Primeval armies use the core units under Primeval's own names (Chief for Warlord, Archers for Marksmen). Their Skill lists and special rules are the ones printed for each tribe. The animals and the optional Man's Best Friend dogs are not included yet.
 
@@ -80,6 +80,66 @@ What should happen: Neanderthal units should show the rules No Ranged Weapons, S
 What to do: Start a roster with the core Warband catalogue. Add a Warlord, a Hero and a Warriors Formation, then add a Hero's Skills.
 
 What should happen: The core Warband should offer exactly what it did before: its Skills, Historical Special Rules and Shaman. Nothing Primeval (Chief, Ferocious Fighter, Archers) should appear in it.
+
+## BR1: The Brutal armies are offered
+
+What to do: Load the game system with all seventeen files. Start a new roster and look at the list of armies.
+
+What should happen: Besides the core warband and the eight Primeval armies, you should see seven Brutal armies: Renaissance Gangs (War of the Fists); The 5 Points; Masked Vigilantes: Heroic; Masked Vigilantes: Villainous; Mob Rule (Late Roman Republic); Wasteland Warriors; and Smog & Soot (Victorian and Edwardian Gangs).
+
+## BR2: Renaissance Gangs: units, weapons and prices
+
+What to do: Start a Renaissance Gangs roster and add a Warband force. Add the Chief - Capo or Doge, one Heroes - Tenente (Lieutenants) and one Toughs - Raffines (Formation of 5). Look at the weapon choice on each, at which units are offered, and at the Honour total.
+
+What should happen: Only the Chief, Heroes and Toughs are offered, with no Missile Troops. Each unit offers a Weapon choice of Unarmed or Short Weapon, with Short Weapon already selected and the two never both. Honour totals 2 (Chief 0, Hero 1, Toughs 1). A Hero shows an error until a Toughs Formation is in the roster, and a second Hero shows an error with only one Formation. The Weapon Mastery group offers Adept, Duellist and Champion, only one at a time. Each unit lists the rules Street Weapons, Beat Down!, No Missile Weapons, Toughs, The Power of the Lady's Gaze and Matchlock.
+
+## BR3: Toughs share the usual Skills and Characters keep their own
+
+What to do: On a Renaissance Gangs Toughs Formation, a Hero and the Chief, read the Skills each is offered.
+
+What should happen: The Toughs Formation should be offered Agile, Cunning, Deadly Shot, Fearsome, Hard Target, Ranger, Savage, Survival Instinct, Throwing Weapons, Seasoned and Adept, and not Tough, Strong, Berserker, Champion, Duellist, Long Shot or Tactician. The Hero adds Long Shot, Tough, Berserker, Strong, Duellist and Champion. The Chief adds Tactician and Concealment, and the Card Pool group of Respected or Revered.
+
+## BR4: The 5 Points: The Big Pay Off and Urchins
+
+What to do: Start a 5 Points roster. Open the Chief's Skills and then a Hero's. Add one Chief, one Hero and then only "Urchins (the free unit)". Then add a second Urchins free unit, then add "Urchins (each additional unit)". Look at the Skills offered to Urchins.
+
+What should happen: The Chief is offered The Big Pay Off (1 Honour) and the Hero is not. The Hero should be allowed once an Urchins unit is in the roster, because Urchins are Warriors. A second free Urchins unit shows an error (only one is free). The additional Urchins unit costs 1 Honour. Urchins have no Skills or weapon choice. Honour for Chief, Hero, free Urchins and one additional Urchins totals 2 (0 + 1 + 0 + 1).
+
+## BR5: Masked Vigilantes, Heroic: the Chief alone, Heroes without Toughs
+
+What to do: Start a Masked Vigilantes: Heroic roster. Add the force called "Heroic Vigilantes" (not the plain Warband). Add only the Chief. Then add three Heroes. Look at the units offered and at the Skills.
+
+What should happen: The Chief alone is valid (a Lone Vigilante) with no errors. Three Heroes can be added with no error and no Toughs Formation needed. No Toughs are offered. The Chief and Heroes are offered Body Armour (1 Honour, Characters only) and Survival Instinct (Characters only), plus the core Skills, and the units show Mighty Blow and Lone Vigilante among their rules.
+
+## BR6: Masked Vigilantes, Villainous: the Chief cannot stand alone
+
+What to do: Start a Masked Vigilantes: Villainous roster. Add the force called "Villainous Gang". Add only the Chief and look at what is reported. Then add one Toughs - Henchmen Formation, then one Hero, then a second Hero. Look at the Skills offered to the Henchmen.
+
+What should happen: The Chief alone should show an error (the gang needs at least one Toughs Formation). With one Henchmen Formation the error clears. One Hero is fine and a second Hero shows an error (one Hero per Formation). The Henchmen are not offered Body Armour or Survival Instinct, which are for Characters only.
+
+## BR7: Mob Rule
+
+What to do: Start a Mob Rule roster. Add a Chief, a Hero and a Toughs - The Mob Formation, and read the rules shown on a unit.
+
+What should happen: The units are the Chief, Heroes and Toughs - The Mob, with Honour 0, 1 and 1 and the usual Skills. The rules shown include Street Weapons, Beat Down!, No Missile Weapons, The Power of Oratory and Faction Stronghold. No new Skills are offered.
+
+## BR8: Wasteland Warriors: long weapons, Missile Troops and costed firearms
+
+What to do: Start a Wasteland Warriors roster. Add a Chief - The Warlord, a Hero (Captain), a Toughs - Crusties Formation and a Missile Troops Formation. Look at the weapon choices. On the Chief open the Firearm group and pick each firearm in turn, reading the Honour. Then look at the Hero's Firearm group.
+
+What should happen: The units offer Short Weapon or Long Weapon (Short already selected), and Missile Troops are offered. The Chief's Firearm group offers Home-made Flintlock Pistol (1 Honour), Sawn-off Shotgun (1) and Modern Pistol (2), one at a time. The Hero's Firearm group offers only the Home-made Flintlock Pistol. Ammo Stash (1 Honour) is offered to the Chief and Hero but not to Toughs or Missile Troops. A Chief with a Modern Pistol and Ammo Stash costs 3 Honour in total.
+
+## BR9: Smog & Soot: Razor Slash
+
+What to do: Start a Smog & Soot roster. Add a Chief, a Hero and a Toughs Formation and read the Skills offered to each.
+
+What should happen: All three are offered Razor Slash (1 Honour). Nobody is offered Body Armour or Ammo Stash. There are no Missile Troops, and weapon choice is Unarmed or Short Weapon.
+
+## R1: Earlier armies are unchanged
+
+What to do: Start a Neanderthals roster as in P4 (Chief with The One Who Knows, Strong and Tough, one Hero, one Warriors) and read the Honour total. Then start a core Warband roster with a Warlord, a Hero and a Warriors Formation and read the Skills the Hero is offered.
+
+What should happen: The Neanderthals roster should still total 7 Honour. The core Warband should still offer the Hero its usual 14 Skills including the Weapon Mastery group, and none of the Brutal or Primeval Skills.
 
 ## SH1: The Shaman is offered, costs 1 Honour, and only one is allowed
 

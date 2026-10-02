@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="dfa4-5e10-25c9-a9ff" name="Primeval - Denisovans" gameSystemId="sys-e140-121e-9b34-0be3" gameSystemRevision="12" revision="12" battleScribeVersion="2.03" type="catalogue" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="dfa4-5e10-25c9-a9ff" name="Primeval - Denisovans" gameSystemId="sys-e140-121e-9b34-0be3" gameSystemRevision="13" revision="13" battleScribeVersion="2.03" type="catalogue" authorName="TRIBAL 2nd Edition rules by Mana Press. NR data authored privately for personal use.">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" name="Agile (Veteran Skill)" hidden="false" id="2329-f51e-c90e-8853" import="true">
       <rules>
